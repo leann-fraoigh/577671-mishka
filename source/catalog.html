@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров | Мишка</title>
+  </head>
+  <body class="body">
+    <header class="page-header wrapper">
+      <nav class="page-header__nav">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+        </a>
+        <div class="page-header__main-nav main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="custom-knitting.html">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__lin--search" href="search.html">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="basket.html">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="page-main-header">
+        <div class="page-main-header__title-conteiner">
+          <h1 class="page-main-header__title wrapper">Каталог товаров</h1>
+        </div>
+      </header>
+      <section class="catalog wrapper">
+      <ul class="catalog__list">
+        <li class="catalog__item catalog-item">
+          <a href="#">
+            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+          </a>
+          <div class="catalog-item__description-container">
+           <h2 class="catalog-item__title">
+             <a href="#">Зайчик-попрыгайчик</a>
+            </h2>
+           <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          </div>
+          <div class="catalog-item__shop-container"></div>
+            <p class="catalog-item__price">1 200 руб.</p>
+            <button class="catalog-item__order button"><span class="visually-hidden">Положить в корзину</span></button>
+          </li>
+        <li class="catalog__item catalog-item">
+          <a href="#">
+            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+          </a>
+          <div class="catalog-item__description-container">
+           <h2 class="catalog-item__title">
+             <a href="#">Корзинка для белья</a>
+            </h2>
+           <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <div class="catalog-item__shop-container"></div>
+            <p class="catalog-item__price">690 руб.</p>
+            <button class="catalog-item__order button"><span class="visually-hidden">Положить в корзину</span></button>
+          </li>
+        <li class="catalog__item catalog-item">
+          <a href="#">
+            <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+          </a>
+          <div class="catalog-item__description-container">
+           <h2 class="catalog-item__title">
+             <a href="#">Большая корзинка для игрушек</a></h2>
+           <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <div class="catalog-item__shop-container"></div>
+            <p class="catalog-item__price">1 500 руб.</p>
+            <button class="catalog-item__order button"><span class="visually-hidden">Положить в корзину</span></button>
+          </li>
+      </ul>
+      </section>
+      <div class="article wrapper">
+        <h2 class="article__title article__title--video ">Процесс производства</h2>
+        <video class="video" width="260" height="150" poster="https://via.placeholder.com/260x150">
+            <source src="https://staging.coverr.co/s3/mp4/Snow-motion.mp4" type="video/mp4">
+        </video>
+        <p class="article__lead">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="article__more-button button" href="#">Сделать заказ</a>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <section class="social">
+        <h2 class="visually-hidden title2">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Инстаграм</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">Фейсбук</a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#">Твиттер</a></li>
+        </ul>
+      </section>
+      <p class="copywrite">Разработано
+        <a class="copywrite__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copywrite__image" src="https://via.placeholder.com/27x34" alt="HTMLacademy" width="27" height="34">
+        </a>
+      </p>
+    </footer>
+    <section class="modal modal--add-to-cart wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="modal__description">Выберите размер:</p>
+        <ul>
+          <li class="modal__filter-option">
+            <input class="modal__input modal__input--radio" id="size-s" name="size" type="radio" checked>
+            <label class="modal__label" for="size-s">S</label>
+          </li>
+          <li class="modal__filter-option">
+            <input class="modal__input modal__input--radio" id="size-m" name="size" type="radio">
+            <label class="modal__label" for="size-m">M</label>
+          </li>
+          <li class="modal__filter-option">
+            <input class="modal__input modal__input--radio" id="size-l" name="size" type="radio">
+            <label class="modal__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
