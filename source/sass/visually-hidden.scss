@@ -1,6 +1,5 @@
-// .input[type=checkbox].visually-hidden,
-// .input[type=radio].visually-hidden,
-.visually-hidden:not(:focus):not(:active) {
+// Вообще... Это ж должен быть миксин, наверное?
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -9,6 +9,9 @@
 }
 
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
+
   border: none;
   margin: 0;
   padding: 0;
@@ -16,24 +19,42 @@
 
 .form__filter-list {
   @include reset-list-style;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .form__legend {
-  margin-bottom: 10px;
-  padding: 0;
+  margin-bottom: 24px;
+  padding: 10px 0 0 0;
 
   font-weight: bold;
   text-transform: uppercase;
   color: $color-accent;
 }
 
+.form__filter-option {
+  // margin-bottom: 22px;
+}
+
 .form__label {
   display: block;
 
+  min-height: 26px;
+  padding: 10px 10px 4px 0;
+
   font-weight: bold;
   color: $color-primary;
+
+  &--radio,
+  &--checkbox {
+    min-height: 47px;
+
+    padding-left: 64px;
+  }
 }
 
+// Хаос в отступах, поправлю.
 .form__input {
   font-family: inherit;
   font-size: inherit;
@@ -57,6 +78,7 @@
   &--email,
   &--text {
     width: 100%;
+
     padding: 14px 0;
   }
 
