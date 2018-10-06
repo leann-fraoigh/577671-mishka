@@ -10,7 +10,6 @@
 }
 
 .contacts__attribute {
-
   &--email {
     @include reset-link-style;
 
@@ -18,16 +17,16 @@
 
     border-bottom: 1px solid $color-accent-darker;
 
-      &:hover,
-      &:focus {
-        color: $color-accent-darker;
-        // Тут поправить цвет!
-      }
+    &:hover,
+    &:focus {
+      color: $color-accent-darker;
+      // Тут поправить цвет!
+    }
 
-      &:active {
-        color: transparentize($color-accent-darker, 0.7);
-        border-bottom: transparentize($color-accent-darker, 0.7);
-      }
+    &:active {
+      color: transparentize($color-accent-darker, 0.7);
+      border-bottom: transparentize($color-accent-darker, 0.7);
+    }
   }
 }
 
