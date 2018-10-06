@@ -1,0 +1,21 @@
+.copywrite {
+  min-height: 80px;
+  font-size: 19px;
+  font-weight: 600;
+  color: $color-primary;
+  text-align: center;
+}
+
+.copywrite__link {
+  @include reset-link-style;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 80px;
+
+  &:active{
+    opacity: 0.3;
+  }
+}

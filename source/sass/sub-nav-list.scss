@@ -1,0 +1,47 @@
+.sub-nav-list {
+  @include reset-list-style;
+}
+
+.sub-nav-list__item {
+
+}
+
+.sub-nav-list__link {
+  @include reset-link-style;
+
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 30px 30px 30px;
+
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-newtral;
+  // На каком уровне лучше задавать в меню параметры для шрифта? На уровне всего списка или ссылки?
+
+  background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    // background-color: satu­rat­e($­color-accent, 6%);
+
+    // С цветами в проекте слегка бардак, т.к. почему-то не работают функции пока бардак, не всегда могу использовать функции: появляется ошибка "undefined variable" используемого цвета. :(
+
+    // background-color: dark­en(­$color-accent, 1%)
+  }
+
+  &:active {
+    color: transparentize($color-newtral, 0.7);
+  }
+
+  &--toys {
+    // background-color: darken(desaturate(adjust-hue($color-accent, 3%), 6), 5);
+    background-color: $greeny-blue;
+  }
+}
+
+.sub-nav-list__title {
+  display: inline-block;
+  max-width: 160px;
+}

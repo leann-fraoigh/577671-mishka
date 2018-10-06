@@ -1,0 +1,26 @@
+.button {
+  @include reset-link-style;
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 14px 10px 14px;
+
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $color-newtral;
+  border: 2px solid $color-primary-lighter;
+
+  &:hover,
+  &:focus {
+    color: $color-newtral;
+    background-color: $color-primary-lighter;
+  }
+
+  &:active {
+    color: transparentize($color-newtral, 0.7);
+  }
+}

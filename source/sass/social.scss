@@ -1,0 +1,25 @@
+.social__list {
+  @include reset-list-style;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  line-height: 0;
+}
+
+.social__item {
+
+  margin: 15px;
+}
+
+.social__link {
+  @include reset-link-style;
+
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+}

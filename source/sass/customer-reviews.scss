@@ -1,0 +1,40 @@
+.customer-reviews {
+  margin-bottom: 38px;
+}
+
+.customer-reviews__title {
+  @include reset-title-style;
+
+  margin-bottom: 23px;
+}
+
+.customer-reviews__list {
+  @include reset-list-style;
+
+  margin-bottom: 30px;
+}
+
+.customer-reviews__text {
+  margin-bottom: 24px;
+}
+
+
+.customer-reviews__author {
+  font-size: 17px;
+}
+
+.customer-reviews__author-name {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+.customer-reviews__controls {
+  margin-bottom: 38px;
+}
+
+.customer-reviews__button {
+  margin-bottom: 35px;
+}

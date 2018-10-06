@@ -1,0 +1,50 @@
+.contacts__title {
+  @include reset-title-style;
+  font-size: 18px;
+}
+
+.contacts__attributes-list {
+  @include reset-list-style;
+
+  margin-bottom: 38px;
+}
+
+.contacts__attribute {
+
+  &--email {
+    @include reset-link-style;
+
+    display: inline-block;
+
+    border-bottom: 1px solid $color-accent-darker;
+
+      &:hover,
+      &:focus {
+        color: $color-accent-darker;
+        // Тут поправить цвет!
+      }
+
+      &:active {
+        color: transparentize($color-accent-darker, 0.7);
+        border-bottom: transparentize($color-accent-darker, 0.7);
+      }
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  min-height: 457px;
+  // Как здесь правильно задать ширину-высоту блока? Можно указывать точные, или минимальные, или максимальные?..
+
+  margin-bottom: 39px;
+
+  background-image: url('../img/map-mobile@1x.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 322px 457px;
+}
+
+.contacts__feedback-button {
+  margin-bottom: 38px;
+}
+
