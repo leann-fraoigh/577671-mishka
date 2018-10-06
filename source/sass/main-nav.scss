@@ -4,16 +4,8 @@
   line-height: 24px;
 }
 
-.main-nav__toggle {
-
-}
-
 .main-nav__list {
   @include reset-list-style;
-}
-
-.main-nav__item {
-
 }
 
 .main-nav__link {
@@ -29,16 +21,15 @@
   &:active {
     opacity: 0.3;
   }
+  // &--current {
 
-  &--current {
+  // }
 
-  }
+  // &--search {
 
-  &--search {
+  // }
 
-  }
+  // &--basket {
 
-  &--basket {
-
-  }
+  // }
 }

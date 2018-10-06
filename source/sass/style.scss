@@ -1,34 +1,28 @@
-@charset 'utf-8';
-
-@import 'fonts';
-
-@import 'variables';
-
-@import 'mixins';
-
+@charset "utf-8";
+@import "fonts";
+@import "variables";
+@import "mixins";
 // Стили блоков
-@import 'visually-hidden';
-@import 'wrapper';
-@import 'button';
-@import 'page';
-@import 'page-container';
-@import 'main-nav';
-@import 'page-header';
-@import 'page-main';
-@import 'page-main-header';
-@import 'sub-nav-list';
-@import 'special-offer';
-@import 'about';
-@import 'customer-reviews';
-@import 'slider';
-@import 'contacts';
-@import 'page-footer';
-@import 'social';
-@import 'copywrite';
-@import 'modal';
-
-@import 'catalog';
-@import 'catalog-item';
-@import 'article';
-
-@import 'form';
+@import "visually-hidden";
+@import "wrapper";
+@import "button";
+@import "page";
+@import "page-container";
+@import "main-nav";
+@import "page-header";
+@import "page-main";
+@import "page-main-header";
+@import "sub-nav-list";
+@import "special-offer";
+@import "about";
+@import "customer-reviews";
+@import "slider";
+@import "contacts";
+@import "page-footer";
+@import "social";
+@import "copywrite";
+@import "modal";
+@import "catalog";
+@import "catalog-item";
+@import "article";
+@import "form";

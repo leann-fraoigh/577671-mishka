@@ -1,5 +1,6 @@
 .article {
   border: 1px solid $color-newtral-medium;
+
   @include block-shadow;
 }
 
@@ -24,6 +25,6 @@
 }
 
 .article__more-button {
-  margin: 0px 33px 33px 33px;
+  margin: 0 33px 33px 33px;
   width: calc(100% - 66px);
 }
