@@ -1,0 +1,50 @@
+.special-offer {
+  padding-bottom: 36px;
+}
+
+.special-offer__list {
+  @include reset-list-style;
+}
+
+.special-offer__title {
+  @include reset-title-style;
+}
+
+.special-offer__status {
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-accent;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.special-offer__description {
+  line-height: 24px;
+}
+
+.special-offer__attributes {
+  width: 100%;
+  margin-bottom: 28px;
+
+  line-height: 20px;
+
+  border-collapse: collapse;
+}
+
+.special-offer__price {
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.special-offer__attribute {
+  border-bottom: 1px solid $color-newtral-medium;
+}
+
+.special-offer__attribute-label {
+  width: 85px;
+  padding: 10px 0;
+}

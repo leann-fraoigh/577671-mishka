@@ -1,0 +1,16 @@
+.modal {
+  padding-bottom: 46px;
+
+  text-align: center;
+}
+
+.modal__title {
+  @include reset-title-style;
+}
+
+.modal__filter-list {
+  @include reset-list-style;
+
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,26 @@
+.about {
+  padding-top: 5px;
+  margin-bottom: 38px;
+
+  color: $color-primary;
+}
+
+
+.about__title {
+  @include reset-title-style;
+
+  margin-bottom: 20px;
+}
+
+.about__list {
+  @include reset-list-style;
+}
+
+.about__item {
+  padding-top: 63px;
+  padding-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+}

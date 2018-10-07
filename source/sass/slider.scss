@@ -1,0 +1,17 @@
+.slider__controls {
+  display: flex;
+}
+
+.slider__control {
+  @include reset-link-style;
+
+  flex-grow: 1;
+
+  min-height: 50px;
+
+  border: 1px solid mix(white, $color-primary, 93%);
+}
+
+.slider__control--left {
+  margin-right: -1px;
+}

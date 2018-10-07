@@ -1,0 +1,35 @@
+.main-nav {
+  color: $color-primary;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.main-nav__list {
+  @include reset-list-style;
+}
+
+.main-nav__link {
+  @include reset-link-style;
+  display: inline-block;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    color: transparentize($color-primary, 0.4);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+  // &--current {
+
+  // }
+
+  // &--search {
+
+  // }
+
+  // &--basket {
+
+  // }
+}
