@@ -1,5 +1,8 @@
 .sub-nav-list {
   @include reset-list-style;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .sub-nav-list__link {
@@ -40,4 +43,10 @@
 .sub-nav-list__title {
   display: inline-block;
   max-width: 160px;
+}
+
+@media (min-width: $m-width) {
+  .sub-nav-list {
+  flex-direction: row;
+  }
 }

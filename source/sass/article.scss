@@ -1,4 +1,8 @@
 .article {
+  @include wrapper-padding;
+}
+
+.article__item {
   border: 1px solid $color-newtral-medium;
 
   @include block-shadow;

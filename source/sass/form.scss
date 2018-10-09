@@ -3,6 +3,10 @@
   line-height: 18px;
 }
 
+.form__container {
+  @include wrapper-padding;
+}
+
 .form__description {
   font-size: 13px;
   line-height: 24px;

@@ -1,4 +1,6 @@
 .page-footer {
+  @include wrapper-full-width-padding;
+
   display: flex;
   flex-direction: column;
 

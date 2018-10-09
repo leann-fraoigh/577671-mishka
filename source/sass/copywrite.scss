@@ -1,4 +1,6 @@
 .copywrite {
+  @include wrapper-padding;
+
   min-height: 80px;
   font-size: 19px;
   font-weight: 600;

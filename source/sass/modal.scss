@@ -1,4 +1,6 @@
 .modal {
+  @include wrapper-padding;
+
   padding-bottom: 46px;
 
   text-align: center;

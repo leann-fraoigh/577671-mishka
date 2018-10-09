@@ -1,4 +1,6 @@
 .customer-reviews {
+  @include wrapper-padding;
+
   margin-bottom: 38px;
 }
 

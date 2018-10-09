@@ -1,4 +1,6 @@
 .special-offer {
+  @include wrapper-padding;
+
   padding-bottom: 36px;
 }
 

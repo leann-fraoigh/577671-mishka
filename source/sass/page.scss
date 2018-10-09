@@ -1,9 +1,11 @@
 .page {
+  min-width: 320px;
+
   font-family: "OpenSans", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: mix(white, $color-primary, 27%);
 
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(229, 58%, 81%);
 }

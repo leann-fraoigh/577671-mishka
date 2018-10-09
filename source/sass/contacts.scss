@@ -3,6 +3,10 @@
   font-size: 18px;
 }
 
+.contacts__container {
+  @include wrapper-padding;
+}
+
 .contacts__attributes-list {
   @include reset-list-style;
 
@@ -31,7 +35,8 @@
 }
 
 .contacts__map {
-  width: 100%;
+  @include wrapper-full-width;
+
   min-height: 457px;
   // Как здесь правильно задать ширину-высоту блока? Можно указывать точные, или минимальные, или максимальные?..
 
@@ -40,7 +45,7 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 322px 457px;
+  background-size: 100vw;
 }
 
 .contacts__feedback-button {

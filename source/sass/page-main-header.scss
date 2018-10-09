@@ -1,7 +1,8 @@
 .page-main-header {
+  @include wrapper-full-width-padding;
+
   background-color: $color-newtral-dark;
 }
-
 
 .page-main-header__title-container {
   text-align: center;
@@ -22,7 +23,6 @@
 
   font-size: 27px;
   line-height: 30px;
-  // color: satu­rat­e($­color-primary, 100%);
   font-weight: 600;
   color: #010000;
 
