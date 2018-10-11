@@ -1,28 +1,15 @@
-// $seafoam-blue: #63d1bb; hsl(168, 54%, 60%);
-// hsl(168, 60%, 59%);
-// $greeny-blue: #56c3b2; hsl(171, 48%, 55%);
-//
-// rgb(85, 195, 179);
-
-// потемнее hsl(171, 50%, 52%); #47c2af
-// rgb(71, 194, 175);
-// $black: hsl(0,0%,0%);
-// $dark-grey: hsl(0, 0%, 27%);
-
-// $one-more-blue #62d1ba hsl(168, 55%, 60%);
-//
-// $base-colour: $black;
-// $black: hsl(0,0%,0%);
-
 // Брейкпоинты
 $s-width: 320px;
+$s-width-max: 767px;
 $s-width-padding: 30px;
 
 $m-width: 768px;
+$m-width-max: 1149px;
 $m-width-padding: 50px;
 
 $l-width: 1150px;
 $l-width-padding: 50px;
+$l-width-padding-left: 175px;
 
 // Серый фон #F1F1F1
 
@@ -39,7 +26,8 @@ $color-accent-darker: $greeny-blue;
 $color-newtral: $white;
 
 // для фонов
-$color-newtral-dark: mix(white, $color-primary, 95%);
+// $color-newtral-dark: mix(white, $color-primary, 95%);
+$color-newtral-dark: #f1f1f1;
 
 // для линеек и отбивок
 $color-newtral-medium: mix(white, $color-primary, 93%);

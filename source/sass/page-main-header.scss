@@ -30,3 +30,25 @@
     padding-bottom: 122px;
   }
 }
+
+@media (min-width: $m-width) {
+  .page-main-header {
+    margin-top: -65px;
+  }
+
+  .page-main-header__title {
+    @include reset-title-style-m;
+
+    padding-top: 160px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .page-main-header {
+    margin-bottom: 70px;
+  }
+
+  .page-main-header__title {
+    @include reset-title-style-l;
+  }
+}

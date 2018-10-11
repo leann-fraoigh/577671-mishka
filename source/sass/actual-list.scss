@@ -1,14 +1,8 @@
-.main-nav {
-  color: $color-primary;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-.main-nav__list {
+.actual-list {
   @include reset-list-style;
 }
 
-.main-nav__link {
+.actual-list__link {
   @include reset-link-style;
   display: inline-block;
   width: 100%;
@@ -21,15 +15,4 @@
   &:active {
     opacity: 0.3;
   }
-  // &--current {
-
-  // }
-
-  // &--search {
-
-  // }
-
-  // &--basket {
-
-  // }
 }

@@ -8,8 +8,20 @@
   @include reset-list-style;
 }
 
+.special-offer__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .special-offer__title {
   @include reset-title-style;
+
+  z-index: 10;
+
+  @media (max-width: $s-width-max) {
+    margin-bottom: 4px;
+  }
 }
 
 .special-offer__status {
@@ -18,9 +30,15 @@
   color: $color-accent;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: $s-width-max) {
+    margin-bottom: 22px;
+  }
 }
 
 .special-offer__description {
+  margin: 0 0 18px 0;
+
   line-height: 24px;
 }
 
@@ -49,4 +67,92 @@
 .special-offer__attribute-label {
   width: 85px;
   padding: 10px 0;
+}
+
+@media (min-width: $m-width) {
+  .special-offer__item {
+    flex-direction: row;
+  }
+
+  .special-offer__title {
+    @include reset-title-style-m;
+
+    align-self: center;
+
+    width: 520px;
+    margin: 0 auto 0 0;
+
+    line-height: 142px;
+  }
+
+  .special-offer__status {
+    align-self: center;
+
+    width: 100px;
+    padding: 7px 12px 0 30px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .special-offer__container--description {
+    width: 292px;
+    margin-right: auto;
+  }
+
+  .special-offer__description {
+    margin-bottom: 35px;
+
+    line-height: 30px;
+  }
+
+  .special-offer__image {
+    width: 333px;
+    height: 404px;
+    margin-top: 10px;
+    margin-bottom: -131px;
+  }
+
+  .special-offer__container--shop {
+    width: 292px;
+  }
+
+  .special-offer__price {
+    margin-bottom: 35px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .special-offer__item {
+    padding-top: 16px;
+    padding-left: $l-width-padding-left;
+  }
+
+  .special-offer__title {
+    @include reset-title-style-l;
+
+    width: 800px;
+    height: 150px;
+
+    font-size: 53px;
+  }
+
+  .special-offer__status {
+    order: -1;
+
+    margin-left: -175px;
+    padding-right: 40px;
+  }
+
+  .special-offer__description {
+    margin-bottom: 48px;
+  }
+
+  .special-offer__image {
+    width: 525px;
+    height: 636px;
+    margin-top: -160px;
+  }
 }

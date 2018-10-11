@@ -26,3 +26,35 @@
   line-height: 20px;
   font-weight: 600;
 }
+
+@media (min-width: $m-width) {
+  .about__title {
+    @include reset-title-style-m;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 300px;
+    margin-right: 34px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .about {
+    padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+  }
+
+  .about__title {
+    @include reset-title-style-l;
+  }
+
+  .about__item {
+    width: 316px;
+  }
+}

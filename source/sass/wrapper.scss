@@ -1,3 +1,4 @@
+// Удалить вообще это!
 .wrapper {
   // box-sizing: border-box;
   // width: 320px;
@@ -5,12 +6,12 @@
 
   &--full-width {
     margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$s-width}  / 2);
+    padding: 0 calc(100vw / 2 - #{$s-width} / 2);
   }
 
   &--full-width-paddings {
     margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$s-width}  / 2 + #{$s-width-padding});
+    padding: 0 calc(100vw / 2 - #{$s-width} / 2 + #{$s-width-padding});
   }
 }
 
@@ -21,12 +22,12 @@
 
     &--full-width {
       margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-      padding: 0 calc(100vw / 2 - #{$m-width}  / 2);
+      padding: 0 calc(100vw / 2 - #{$m-width} / 2);
     }
 
     &--full-width-paddings {
       margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-      padding: 0 calc(100vw / 2 - #{$m-width}  / 2 + #{$m-width-padding});
+      padding: 0 calc(100vw / 2 - #{$m-width} / 2 + #{$m-width-padding});
     }
   }
 }
@@ -38,13 +39,12 @@
 
     &--full-width {
       margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
-      padding: 0 calc(100vw / 2 - #{$l-width}  / 2);
+      padding: 0 calc(100vw / 2 - #{$l-width} / 2);
     }
 
     &--full-width-paddings {
       margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
-      padding: 0 calc(100vw / 2 - #{$l-width}  / 2 + #{$l-width-padding});
+      padding: 0 calc(100vw / 2 - #{$l-width} / 2 + #{$l-width-padding});
     }
   }
 }
-

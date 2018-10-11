@@ -7,4 +7,25 @@
 
 .catalog__list {
   @include reset-list-style;
+
+  margin-bottom: 30px;
+}
+
+@media (min-width: $m-width) {
+  .catalog__list {
+    // display: flex;
+    flex-direction: column;
+
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    margin-bottom: 57px;
+  }
 }

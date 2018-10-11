@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.sub-nav-list__item {
+  flex-grow: 1;
+}
+
 .sub-nav-list__link {
   @include reset-link-style;
 
@@ -43,10 +47,13 @@
 .sub-nav-list__title {
   display: inline-block;
   max-width: 160px;
+
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @media (min-width: $m-width) {
   .sub-nav-list {
-  flex-direction: row;
+    flex-direction: row;
   }
 }

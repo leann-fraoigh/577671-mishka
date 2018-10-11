@@ -1,42 +1,3 @@
-@mixin reset-list-style {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-@mixin reset-link-style {
-  color: inherit;
-  text-decoration: none;
-}
-
-@mixin reset-title-style {
-  margin: 0;
-  padding: 0;
-  margin-top: 28px;
-
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 600;
-  color: $color-primary;
-}
-
-@mixin title-h3 {
-  font-size: 17px;
-  line-height: 24px;
-}
-
-@mixin block-shadow {
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 transparentize($color-primary, 0.9);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 transparentize($color-primary, 0.9);
-  }
-}
-
 // Обертки
 
 @mixin wrapper-padding {
@@ -54,30 +15,83 @@
 
 @mixin wrapper-full-width {
   margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-  padding: 0 calc(100vw / 2 - #{$s-width}  / 2);
+  padding: 0 calc(100vw / 2 - #{$s-width} / 2);
 
   @media (min-width: $m-width) {
     margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$m-width}  / 2);
+    padding: 0 calc(100vw / 2 - #{$m-width} / 2);
   }
 
   @media (min-width: $l-width) {
     margin: 0 calc(-100vw / 2 + #{l-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$l-width}  / 2);
+    padding: 0 calc(100vw / 2 - #{$l-width} / 2);
   }
 }
 
 @mixin wrapper-full-width-padding {
   margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-  padding: 0 calc(100vw / 2 - #{$s-width}  / 2 + #{$s-width-padding});
+  padding: 0 calc(100vw / 2 - #{$s-width} / 2 + #{$s-width-padding});
 
   @media (min-width: $m-width) {
     margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$m-width}  / 2 + #{$m-width-padding});
+    padding: 0 calc(100vw / 2 - #{$m-width} / 2 + #{$m-width-padding});
   }
 
   @media (min-width: $l-width) {
     margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
-    padding: 0 calc(100vw / 2 - #{$l-width}  / 2 + #{$l-width-padding});
+    padding: 0 calc(100vw / 2 - #{$l-width} / 2 + #{$l-width-padding});
+  }
+}
+
+// Разное
+@mixin reset-list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin reset-link-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin reset-title-style {
+  margin: 0 0 0 -2px;
+  padding: 0;
+  margin-top: 28px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+@mixin reset-title-style-m {
+  margin-left: -3px;
+  font-size: 43px;
+  line-height: 50px;
+  text-align: center;
+}
+
+@mixin reset-title-style-l {
+  margin-left: -4px;
+  font-size: 53px;
+  line-height: 57px;
+}
+
+@mixin title-h3 {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@mixin block-shadow {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 transparentize($color-primary, 0.9);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 transparentize($color-primary, 0.9);
   }
 }

@@ -3,6 +3,9 @@
 }
 
 .article__item {
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid $color-newtral-medium;
 
   @include block-shadow;
@@ -31,4 +34,40 @@
 .article__more-button {
   margin: 0 33px 33px 33px;
   width: calc(100% - 66px);
+}
+
+@media (min-width: $m-width) {
+  .article__video {
+    order: -1;
+
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .article__item {
+    align-items: flex-end;
+    justify-content: space-between;
+
+    min-height: 455px;
+    padding-right: 57px;
+  }
+
+  .article__title,
+  .article__lead,
+  .article__more-button {
+    width: 230px;
+  }
+
+  .article__title {
+    margin-top: -455px;
+  }
+
+  .article__video {
+    align-self: flex-start;
+
+    // временно
+    background-color: grey;
+  }
 }
