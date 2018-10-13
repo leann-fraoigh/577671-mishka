@@ -1,10 +1,5 @@
 .page-footer {
-  @include wrapper-full-width-padding;
-
-  display: flex;
-  flex-direction: column;
-
-
+  // @include wrapper-full-width-padding;
   background-color: $color-newtral-dark;
 }
 
@@ -15,8 +10,16 @@
   margin-right: 85px;
 }
 
+
+.page-footer__containter {
+  @include wrapper-padding;
+
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $m-width) {
-  .page-footer {
+  .page-footer__containter {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

@@ -1,3 +1,7 @@
+.contacts {
+  @include wrapper-padding;
+}
+
 .contacts__title {
   @include reset-title-style;
 
@@ -6,10 +10,9 @@
   font-size: 18px;
 }
 
-.contacts__container {
-  @include wrapper-padding;
-}
-
+// .contacts__container {
+// @include wrapper-padding;
+// }
 .contacts__attributes-list {
   @include reset-list-style;
 
@@ -50,8 +53,6 @@
 }
 
 .contacts__map {
-  @include wrapper-full-width;
-
   min-height: 457px;
   margin-bottom: 39px;
 
@@ -60,11 +61,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 320px;
+
+  @media (max-width: $s-width-max) {
+    @include wrapper-full-width;
+  }
 }
 
 .contacts__container--feedback {
   margin-bottom: 38px;
 }
+
 
 @media (min-width: $m-width) {
   .contacts__title {
@@ -99,6 +105,10 @@
     // Временно
     background-color: grey;
     // background-color: transparent;
+
+    @media (max-width: $m-width-max) {
+      margin: 0 -#{$m-width-padding};
+    }
   }
 
   .contacts__feedback-button {
@@ -112,7 +122,7 @@
 
 @media (min-width: $l-width) {
   .contacts {
-    padding-left: $l-width-padding-left;
+    padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
     padding-top: 44px;
   }
 

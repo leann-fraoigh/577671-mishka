@@ -1,6 +1,5 @@
 .page-header {
   @include wrapper-padding;
-
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -15,7 +14,7 @@
   display: flex;
   margin: 0 auto;
 
-  @media (max-width: $s-width-max) {
+  @media (min-width: $s-width) and (max-width: $s-width-max) {
     padding-left: 30px;
     max-height: 35px;
   }

@@ -1,6 +1,5 @@
 .special-offer {
   @include wrapper-padding;
-
   padding-bottom: 36px;
 }
 
@@ -134,7 +133,9 @@
     @include reset-title-style-l;
 
     width: 800px;
-    height: 150px;
+    // height: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     font-size: 53px;
   }

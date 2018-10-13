@@ -1,6 +1,5 @@
 .page-main-header {
-  @include wrapper-full-width-padding;
-
+  // @include wrapper-full-width-padding;
   background-color: $color-newtral-dark;
 }
 
@@ -18,9 +17,6 @@
 .page-main-header__title {
   @include reset-title-style;
 
-  padding-top: 70px;
-  padding-bottom: 77px;
-
   font-size: 27px;
   line-height: 30px;
   font-weight: 600;
@@ -28,6 +24,10 @@
 
   &--index {
     padding-bottom: 122px;
+  }
+
+  @media (max-width: $s-width-max) {
+    padding: 70px 35px 77px 35px;
   }
 }
 
@@ -39,7 +39,9 @@
   .page-main-header__title {
     @include reset-title-style-m;
 
-    padding-top: 160px;
+    @media (max-width: $m-width-max) {
+      padding: 160px 55px 77px 55px;
+    }
   }
 }
 
@@ -50,5 +52,7 @@
 
   .page-main-header__title {
     @include reset-title-style-l;
+
+    padding: 160px 170px 77px 170px;
   }
 }

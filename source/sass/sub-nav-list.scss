@@ -21,17 +21,12 @@
   font-weight: 600;
   line-height: 24px;
   color: $color-newtral;
-  // На каком уровне лучше задавать в меню параметры для шрифта? На уровне всего списка или ссылки?
 
   background-color: $color-accent;
 
   &:hover,
   &:focus {
     // background-color: satu­rat­e($­color-accent, 6%);
-
-    // С цветами в проекте слегка бардак, т.к. почему-то не работают функции пока бардак, не всегда могу использовать функции: появляется ошибка "undefined variable" используемого цвета. :(
-
-    // background-color: dark­en(­$color-accent, 1%)
   }
 
   &:active {
@@ -54,6 +49,8 @@
 
 @media (min-width: $m-width) {
   .sub-nav-list {
+    @include wrapper-padding;
+
     flex-direction: row;
   }
 }
