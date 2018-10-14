@@ -1,5 +1,77 @@
+// Удалить вообще это!
+// .wrapper {
+//   // box-sizing: border-box;
+//   // width: 320px;
+//   padding: 0 $s-width-padding;
+
+//   &--full-width {
+//     margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
+//     padding: 0 calc(100vw / 2 - #{$s-width} / 2);
+//   }
+
+//   &--full-width-paddings {
+//     margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
+//     padding: 0 calc(100vw / 2 - #{$s-width} / 2 + #{$s-width-padding});
+//   }
+// }
 .wrapper {
-  width: 260px;
-  padding: 0 30px;
+  box-sizing: border-box;
+  width: $s-width;
   margin: 0 auto;
+  // outline: 1px dashed blueviolet;
+  // background-color: #fff8f8;
+
+  @media (min-width: $m-width) {
+    width: $m-width;
+  }
+
+  @media (min-width: $l-width) {
+    width: $l-width;
+  }
 }
+// @media (min-width: $l-width) {
+//   .page-container {
+//     width: $m-width;
+//   }
+// }
+
+// @media (min-width: $l-width) {
+//   .page-container {
+//     width: $l-width;
+//   }
+// }
+
+
+// @media (min-width: $m-width) {
+//   .wrapper {
+//     // width: $m-width;
+//     padding: 0 $m-width-padding;
+
+//     &--full-width {
+//       margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
+//       padding: 0 calc(100vw / 2 - #{$m-width} / 2);
+//     }
+
+//     &--full-width-paddings {
+//       margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
+//       padding: 0 calc(100vw / 2 - #{$m-width} / 2 + #{$m-width-padding});
+//     }
+//   }
+// }
+
+// @media (min-width: $l-width) {
+//   .wrapper {
+//     // width: $l-width;
+//     padding: 0 $l-width-padding;
+
+//     &--full-width {
+//       margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
+//       padding: 0 calc(100vw / 2 - #{$l-width} / 2);
+//     }
+
+//     &--full-width-paddings {
+//       margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
+//       padding: 0 calc(100vw / 2 - #{$l-width} / 2 + #{$l-width-padding});
+//     }
+//   }
+// }

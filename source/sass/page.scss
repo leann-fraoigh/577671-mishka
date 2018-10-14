@@ -1,9 +1,17 @@
 .page {
+  min-width: 320px;
+
   font-family: "OpenSans", sans-serif;
   font-size: 15px;
+
+  @media (min-width: $m-width) {
+    font-size: 17px;
+  }
+
   line-height: 30px;
   font-weight: 400;
   color: mix(white, $color-primary, 27%);
 
-  background-color: hsl(0, 0%, 95%);
+  // Временно
+  // background-color: rgb(255, 245, 245);
 }

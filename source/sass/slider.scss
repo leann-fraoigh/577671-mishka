@@ -7,11 +7,20 @@
 
   flex-grow: 1;
 
-  min-height: 50px;
+  min-width: 130px;
+  min-height: 52px;
 
   border: 1px solid mix(white, $color-primary, 93%);
 }
 
 .slider__control--left {
   margin-right: -1px;
+}
+
+@media (min-width: $m-width) {
+  .slider__control {
+    min-width: 88px;
+
+    border: none;
+  }
 }

@@ -1,7 +1,18 @@
 .page-container {
-  width: 320px;
+  width: $s-width;
   margin: 0 auto;
-  padding: 0;
 
   background-color: $color-newtral;
+}
+
+@media (min-width: $m-width) {
+  .page-container {
+    width: $m-width;
+  }
+}
+
+@media (min-width: $l-width) {
+  .page-container {
+    width: $l-width;
+  }
 }

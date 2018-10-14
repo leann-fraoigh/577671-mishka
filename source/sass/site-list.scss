@@ -1,0 +1,37 @@
+.site-list {
+  @include reset-list-style;
+
+  font-size: 17px;
+}
+
+.site-list__link {
+  @include reset-link-style;
+
+  display: inline-block;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    color: transparentize($color-primary, 0.4);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $l-width) {
+  .site-list__link {
+    width: 185px;
+  }
+
+  .site-list__item:not(:first-child) {
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: $m-width) {
+  .site-list {
+    display: flex;
+  }
+}

@@ -1,0 +1,26 @@
+.user-list {
+  @include reset-list-style;
+
+  font-size: 17px;
+}
+
+.user-list__link {
+  @include reset-link-style;
+  display: inline-block;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    color: transparentize($color-primary, 0.4);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $m-width) {
+  .user-list {
+    display: flex;
+  }
+}

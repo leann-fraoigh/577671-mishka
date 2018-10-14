@@ -1,4 +1,5 @@
 .customer-reviews {
+  @include wrapper-padding;
   margin-bottom: 38px;
 }
 
@@ -15,17 +16,17 @@
 }
 
 .customer-reviews__text {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 
 .customer-reviews__author {
-  font-size: 17px;
+  font-style: normal;
 }
 
 .customer-reviews__author-name {
-  font-style: normal;
-  font-size: 17px;
+  margin-bottom: 3px;
+
   line-height: 24px;
   font-weight: 600;
   color: $color-primary;
@@ -37,4 +38,53 @@
 
 .customer-reviews__button {
   margin-bottom: 35px;
+}
+
+@media (min-width: $m-width) {
+  .customer-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .customer-reviews__list {
+    margin-bottom: 47px;
+  }
+
+
+  .customer-reviews__title {
+    @include reset-title-style-m;
+    margin: 0;
+    order: -2;
+  }
+
+  .customer-reviews__text {
+    margin: 11px 0 58px 0;
+  }
+
+  .customer-reviews__button {
+    order: -1;
+
+    width: 175px;
+    margin-top: 2px;
+    margin-left: auto;
+  }
+
+  .customer-reviews__controls {
+    margin: -107px 0 0 auto;
+  }
+}
+
+@media (min-width: $l-width) {
+  .customer-reviews {
+    padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+  }
+
+  .customer-reviews__title {
+    @include reset-title-style-l;
+  }
+
+  .customer-reviews__text {
+    margin-bottom: 38px;
+  }
 }

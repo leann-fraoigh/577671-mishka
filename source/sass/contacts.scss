@@ -1,12 +1,34 @@
+.contacts {
+  @include wrapper-padding;
+}
+
 .contacts__title {
   @include reset-title-style;
+
+  margin-bottom: 26px;
+
   font-size: 18px;
 }
 
+// .contacts__container {
+// @include wrapper-padding;
+// }
 .contacts__attributes-list {
   @include reset-list-style;
 
   margin-bottom: 38px;
+}
+
+.contacts__attributes-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__attribute-label {
+  padding-right: 32px;
 }
 
 .contacts__attribute {
@@ -31,18 +53,99 @@
 }
 
 .contacts__map {
-  width: 100%;
   min-height: 457px;
-  // Как здесь правильно задать ширину-высоту блока? Можно указывать точные, или минимальные, или максимальные?..
-
   margin-bottom: 39px;
 
+  background-color: $color-newtral-dark;
   background-image: url("../img/map-mobile@1x.jpg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 322px 457px;
+  background-size: 320px;
+
+  @media (max-width: $s-width-max) {
+    @include wrapper-full-width;
+  }
 }
 
-.contacts__feedback-button {
+.contacts__container--feedback {
   margin-bottom: 38px;
+}
+
+
+@media (min-width: $m-width) {
+  .contacts__title {
+    @include reset-title-style-m;
+
+    margin-bottom: 47px;
+  }
+
+  .contacts__attributes-list {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .contacts__attributes-item {
+    display: flex;
+
+    @media (max-width: $m-width-max) {
+      width: 50%;
+    }
+  }
+
+  .contacts__attribute-label {
+    padding-right: 26px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+    margin: 0 0 55px 0;
+    padding: 0;
+
+    // Временно
+    background-color: grey;
+    // background-color: transparent;
+
+    @media (max-width: $m-width-max) {
+      margin: 0 -#{$m-width-padding};
+    }
+  }
+
+  .contacts__feedback-button {
+    width: 230px;
+
+    @media (max-width: $m-width-max) {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $l-width) {
+  .contacts {
+    padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+    padding-top: 44px;
+  }
+
+  .contacts__container {
+    width: 300px;
+  }
+
+  .contacts__title {
+    @include reset-title-style-l;
+  }
+
+  .contacts__attributes-list {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+    margin-top: -365px;
+    margin-left: 402px;
+  }
+
+  .contacts__container--feedback {
+    margin-top: -107px;
+  }
 }
