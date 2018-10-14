@@ -16,8 +16,9 @@
 }
 
 @mixin wrapper-full-width {
-  margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-  padding: 0 calc(100vw / 2 - #{$s-width} / 2);
+  margin-left: calc(-100vw / 2 + #{$s-width} / 2);
+  margin-right: calc(-100vw / 2 + #{$s-width} / 2);
+  // padding: 0 calc(100vw / 2 - #{$s-width} / 2);
 }
 //   @media (min-width: $m-width) {
 //     margin: 0 calc(-100vw / 2 + #{$m-width} / 2);

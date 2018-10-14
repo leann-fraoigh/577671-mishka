@@ -7,6 +7,8 @@
       content="width=device-width,initial-scale=1">
     <title>Мишка | Милые штуки ручной работы для&nbsp;дома</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=43018ccb-876c-4f21-9f9c-e343fcf4cd9c&lang=ru_RU" type="text/javascript">
+    </script>
   </head>
   <body class="page">
     <header class="page-header wrapper">
@@ -113,8 +115,9 @@
             <li class="contacts__attributes-item"><span class="contacts__attribute-label">адрес:</span><span>г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</span></li>
           </ul>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map" id="map">
           <!-- <img src="https://via.placeholder.com/320x457" alt="" width="322" height="457"> -->
+          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e1b7a4dd2f50361723365d10a382a18d861d0663513317a4341782bb5b95a16&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script> -->
         </div>
         <div class="contacts__container contacts__container--feedback">
           <a class="contacts__feedback-button button" href="#">Напишите нам</a>
@@ -160,5 +163,6 @@
         <button class="modal__form-button button" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/map.js"></script>
   </body>
 </html>
