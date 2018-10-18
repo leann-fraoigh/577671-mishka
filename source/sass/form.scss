@@ -113,23 +113,23 @@
 }
 
 .form__fieldset--customer-name {
-    margin-bottom: 10px;
-    padding-top: 0;
+  margin-bottom: 10px;
+  padding-top: 0;
 
   .form__legend {
-      padding-top: 0;
-      margin-bottom: 30px;
+    padding-top: 0;
+    margin-bottom: 30px;
   }
 
   .form__label {
-      padding-top: 0;
-      padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .form__input {
-      margin-bottom: 22px;
-      padding-top: 8px;
-      padding-bottom: 16px;
+    margin-bottom: 22px;
+    padding-top: 8px;
+    padding-bottom: 16px;
   }
 }
 
@@ -139,6 +139,7 @@
       margin-bottom: 32px;
     }
   }
+
   .form__legend {
     margin-bottom: 0;
 
@@ -170,6 +171,7 @@
 .form__send-button {
   padding-top: 14px;
   padding-bottom: 15px;
+
   @media (max-width: $s-width-max) {
     margin-bottom: 55px;
   }
@@ -234,6 +236,7 @@
 
     .form__input {
       padding-top: 10;
+
       @media (max-width: $m-width-max) {
         margin-bottom: 28px;
       }
@@ -247,6 +250,7 @@
     .form__fieldset {
       margin-bottom: 32px;
     }
+
     .form__input {
       padding-top: 7px;
     }

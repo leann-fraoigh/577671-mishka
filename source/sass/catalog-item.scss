@@ -56,7 +56,7 @@
   padding: 7px 28px 12px 28px;
 
   // @media (max-width: $s-width-max) {
-    box-shadow: 0 -31px 0 -#{$s-width-padding} $color-newtral-medium;
+  box-shadow: 0 -31px 0 -#{$s-width-padding} $color-newtral-medium;
   // }
 }
 
@@ -77,6 +77,7 @@
 @media (min-width: $m-width) {
   .catalog-item {
     display: flex;
+
     @media (max-width: $m-width-max) {
       margin-bottom: 54px;
     }
@@ -121,7 +122,7 @@
     margin-left: -1px;
     margin-right: -1px;
   }
-// правила ниже временные -- проверить, нельзя ли оптимизировать!
+  // правила ниже временные -- проверить, нельзя ли оптимизировать!
   .catalog-item__description {
     margin-top: 3px;
     margin-bottom: 8;
