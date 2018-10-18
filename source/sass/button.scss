@@ -24,3 +24,22 @@
     color: transparentize($color-newtral, 0.7);
   }
 }
+
+.button--accent {
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  color: $color-newtral;
+
+  border: none;
+  background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-active;
+  }
+
+  &:active {
+    color: transparentize($color-newtral, 0.7);
+  }
+}

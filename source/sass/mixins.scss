@@ -3,15 +3,18 @@
 @mixin wrapper-padding {
   // box-sizing: border-box;
   @media (max-width: $s-width-max) {
-    padding: 0 $s-width-padding;
+    padding-left: $s-width-padding;
+    padding-right: $s-width-padding;
   }
 
   @media (min-width: $m-width) and (max-width: $m-width-max) {
-    padding: 0 $m-width-padding;
+    padding-left: $m-width-padding;
+    padding-right: $m-width-padding;
   }
 
   @media (min-width: $l-width) {
-    padding: 0 $l-width-padding;
+    padding-left: $l-width-padding;
+    padding-right: $l-width-padding;
   }
 }
 

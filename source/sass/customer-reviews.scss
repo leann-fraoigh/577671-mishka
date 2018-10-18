@@ -1,6 +1,9 @@
 .customer-reviews {
   @include wrapper-padding;
-  margin-bottom: 38px;
+
+  @media (max-width: $s-width-max) {
+    margin-bottom: 52px;
+  }
 }
 
 .customer-reviews__title {
@@ -37,7 +40,9 @@
 }
 
 .customer-reviews__button {
-  margin-bottom: 35px;
+  @media (max-width: $s-width-max) {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: $m-width) {
@@ -45,6 +50,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    // Временно
+    background-color: $color-newtral-dark;
+
+    @media (max-width: $m-width-max) {
+      margin-bottom: 85px;
+      padding-top: 78px;
+    }
   }
 
   .customer-reviews__list {
@@ -54,7 +67,13 @@
 
   .customer-reviews__title {
     @include reset-title-style-m;
+
+    @media (max-width: $m-width-max) {
+      max-width: 450px;
+    }
+
     margin: 0;
+    padding-bottom: 8px;
     order: -2;
   }
 
@@ -62,12 +81,22 @@
     margin: 11px 0 58px 0;
   }
 
+  .customer-reviews__author {
+    @media (max-width: $m-width-max) {
+      max-width: 450px;
+    }
+  }
+
   .customer-reviews__button {
     order: -1;
 
     width: 175px;
-    margin-top: 2px;
     margin-left: auto;
+    margin-bottom: 33px;
+
+    @media (max-width: $m-width-max) {
+      margin-top: 2px;
+    }
   }
 
   .customer-reviews__controls {
@@ -77,14 +106,33 @@
 
 @media (min-width: $l-width) {
   .customer-reviews {
-    padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+    // padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+    padding-left: $l-width-padding;
+    padding-top: 72px;
+    padding-bottom: 48px;
+    margin-bottom: 90px;
   }
 
   .customer-reviews__title {
     @include reset-title-style-l;
+
+    max-width: 650px;
+    padding-left: $l-width-padding-left;
+  }
+
+  .customer-reviews__list {
+    padding-left: $l-width-padding-left;
   }
 
   .customer-reviews__text {
     margin-bottom: 38px;
+  }
+
+  .customer-reviews__author {
+      max-width: 650px;
+  }
+
+  .customer-reviews__button {
+    margin-top: 10px;
   }
 }

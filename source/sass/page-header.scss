@@ -1,9 +1,10 @@
 .page-header {
-  @include wrapper-padding;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  @media (max-width: $s-width-max) {
+    align-items: center;
+  }
 
+  display: flex;
+  flex-wrap: wrap;
 
   color: $color-primary;
   font-weight: 600;
@@ -15,51 +16,32 @@
   margin: 0 auto;
 
   @media (min-width: $s-width) and (max-width: $s-width-max) {
-    padding-left: 30px;
-    max-height: 35px;
+    min-height: 79px;
   }
+}
 
-  @media (min-width: $m-width) {
-    order: -2;
-    justify-content: flex-start;
+.page-header__logo {
+  display: flex;
+  align-items: center;
 
-    margin-left: 0;
-    padding-left: 0;
-    max-height: 46px;
-  }
-
-  @media (min-width: $l-width) {
-    width: 149px;
-    max-height: 72px;
-  }
+  // @media (min-width: $s-width) and (max-width: $s-width-max) {
+  //   margin-left: 60px;
+  // }
 }
 
 .page-header__menu-toggle {
-  @media (min-width: $m-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: $s-width) and (max-width: $s-width-max) {
+    margin-right: 30px;
   }
+
+  height: 20px;
 }
 
-.page-header__list--site-list {
-  @media (min-width: $l-width) {
-    order: -3;
-    width: 450px;
-  }
-}
-
-.page-header__list--user-list {
-  @media (min-width: $m-width) {
-    order: -1;
-  }
-}
 
 .page-header__list--actual-list {
   display: none;
-
-  @media (min-width: $l-width) {
-    display: block;
-    min-height: 60px;
-  }
 }
 
 .page-header__note {
@@ -67,10 +49,85 @@
 
   font-weight: 400;
   color: $color-primary-lighter;
+}
 
-  @media (min-width: $m-width) {
+@media (min-width: $m-width) {
+  .page-header {
+    @include wrapper-padding;
+
+    align-items: stretch;
+  }
+
+  .page-header__container--logo {
+    @media (max-width: $m-width-max) {
+      margin-left: 0;
+      // height: 46px;
+    }
+    order: -2;
+    justify-content: flex-start;
+
+    height: 88px;
+    // width: 300px;
+    padding-left: 0;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+  .page-header__list--site-list {
+    @media (max-width: $m-width-max) {
+      max-width: 430px;
+    }
+  }
+
+  .page-header__list--user-list {
+    justify-content: flex-end;
+    order: -1;
+
+    width: 370px;
+  }
+
+  .page-header__note {
+    @media (max-width: $m-width-max) {
+      width: 230px;
+    }
+
     display: block;
 
+    max-height: 34px;
     margin-left: auto;
+
+    font-size: 15px;
+    overflow: hidden;
   }
 }
+
+@media (min-width: $l-width) {
+  .page-header__container--logo {
+    justify-content: center;
+
+    width: 149px;
+    // height: 88px;
+    padding-right: 40px;
+  }
+
+  .page-header__list--site-list {
+    order: -3;
+    width: 410px;
+  }
+
+  // .page-header__list--user-list {
+  //   padding-left: 60px;
+  // }
+
+  .page-header__list--actual-list {
+    // display: block;
+    min-height: 60px;
+  }
+
+  .page-header__note {
+    max-width: 340px;
+  }
+}
+

@@ -1,17 +1,16 @@
 .form {
   line-height: 18px;
 
-  fieldset {
-    border: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+  @media (max-width: $s-width-max) {
+    padding-top: 10px;
   }
 }
 
-// .form__container {
-//   @include wrapper-padding;
-// }
+.fieldset {
+  border: none;
+  margin-top: 0;
+  padding: 0;
+}
 
 .form .wrapper {
   @media (max-width: $m-width-max) {
@@ -49,10 +48,6 @@
   color: $color-accent;
 }
 
-// .form__filter-option {
-//   // margin-bottom: 22px;
-// }
-
 .form__label {
   display: inline-block;
 
@@ -64,9 +59,10 @@
 
   &--radio,
   &--checkbox {
-    min-height: 47px;
-
-    padding-left: 64px;
+    @media (max-width: $s-width-max) {
+      min-height: 47px;
+      padding-left: 64px;
+    }
   }
 }
 
@@ -83,7 +79,7 @@
   &--textarea {
     box-sizing: border-box;
     width: 100%;
-    min-height: 134px;
+    min-height: 142px;
     padding: 13px 20px;
 
     line-height: inherit;
@@ -112,9 +108,58 @@
   }
 }
 
+.form__fieldset--color {
+  margin-bottom: 6px;
+}
+
+.form__fieldset--customer-name {
+    margin-bottom: 10px;
+    padding-top: 0;
+
+  .form__legend {
+      padding-top: 0;
+      margin-bottom: 30px;
+  }
+
+  .form__label {
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .form__input {
+      margin-bottom: 22px;
+      padding-top: 8px;
+      padding-bottom: 16px;
+  }
+}
+
+.form__container--customer-contacts {
+  .form__fieldset {
+    @media (max-width: $s-width-max) {
+      margin-bottom: 32px;
+    }
+  }
+  .form__legend {
+    margin-bottom: 0;
+
+    @media (max-width: $s-width-max) {
+      padding-top: 0;
+    }
+  }
+
+  .form__input {
+    padding: 21px 0 17px 0;
+  }
+}
+
+.form__fieldset--comment {
+  .form__legend {
+    padding-top: 0;
+  }
+}
 
 .form__footnote {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (max-width: $s-width-max) {
     font-size: 14px;
@@ -123,23 +168,47 @@
 }
 
 .form__send-button {
-  margin-bottom: 55px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  @media (max-width: $s-width-max) {
+    margin-bottom: 55px;
+  }
 }
 
 
 @media (min-width: $m-width) {
-  .form .wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .form__description {
+    @media (max-width: $m-width-max) {
+      padding-top: 22px;
+    }
   }
 
   .form__fieldset {
     flex-direction: row;
+    align-items: baseline;
+  }
+
+  .form__fieldset--type {
+    padding-top: 46px;
+    padding-bottom: 20px;
   }
 
   .form__fieldset--color,
   .form__container--customer-contacts {
     background-color: $color-newtral-dark;
+  }
+
+  .form__fieldset--color {
+    padding-top: 57px;
+    padding-bottom: 20px;
+  }
+
+  .form__fieldset--customer-name {
+    @media (max-width: $m-width-max) {
+      margin-bottom: 8px;
+    }
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   .form__filter-list--color {
@@ -148,22 +217,50 @@
     justify-content: space-between;
 
     .form__filter-option {
-      width: 240px;
+      @media (max-width: $m-width-max) {
+        width: 240px;
+      }
     }
   }
 
-  .form__containter--customer-name {
+  .form__container--customer-name {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 
-    .form-label {
-      padding-right: 26px;
+    .form__label {
+      padding-right: 30px;
     }
+
+    .form__input {
+      padding-top: 10;
+      @media (max-width: $m-width-max) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  .form__container--customer-contacts {
+    padding-top: 55px;
+    padding-bottom: 14px;
+
+    .form__fieldset {
+      margin-bottom: 32px;
+    }
+    .form__input {
+      padding-top: 7px;
+    }
+  }
+
+  .form__fieldset--comment {
+    padding-top: 50px;
+    padding-bottom: 46px;
   }
 
   .form__container--send-button {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   .form__description,
@@ -174,12 +271,25 @@
 
   .form__send-button {
     order: -1;
+    align-items: baseline;
+
     width: 230px;
+    margin-bottom: 52px;
   }
 
   .form__legend {
     flex-shrink: 0;
     width: 165px;
+  }
+
+  .form__label {
+    &--radio,
+    &--checkbox {
+      @media (max-width: $m-width-max) {
+        min-height: 62px;
+        padding-left: 83px;
+      }
+    }
   }
 
   .form__input {
@@ -210,10 +320,38 @@
     width: 115px;
   }
 
+  .form__label {
+    &--radio,
+    &--checkbox {
+      min-height: 62px;
+      padding-left: 83px;
+    }
+  }
+
   .form__input {
     &--text {
       min-width: 550px;
     }
+  }
+
+  .form__filter-list--color {
+    .form__filter-option {
+      max-width: 175px;
+    }
+  }
+
+  .form__container--customer-name {
+    .form__input {
+      margin-bottom: 30px;
+    }
+  }
+
+  .form__fieldset--customer-name {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset--comment {
+    padding-bottom: 42px;
   }
 
   .form__send-button {

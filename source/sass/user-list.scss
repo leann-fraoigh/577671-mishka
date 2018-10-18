@@ -2,12 +2,22 @@
   @include reset-list-style;
 
   font-size: 17px;
+
+  @media (max-width: $s-width-max) {
+    width: 100%;
+  }
 }
 
 .user-list__link {
   @include reset-link-style;
-  display: inline-block;
-  width: 100%;
+
+  display: block;
+
+  @media (max-width: $s-width-max) {
+    padding: 26px 30px 28px 76px;
+
+    border-top: 1px solid $color-newtral-medium;
+  }
 
   &:hover,
   &:focus {
@@ -22,5 +32,43 @@
 @media (min-width: $m-width) {
   .user-list {
     display: flex;
+  }
+
+  .user-list__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-list__item--search {
+    border-right: 1px solid $color-newtral-medium;
+    border-left: 1px solid $color-newtral-medium;
+  }
+
+  .user-list__link {
+    padding-left: 83px;
+  }
+
+  .user-list__link--search {
+    // min-width: 82px;
+    height: 88px;
+  }
+
+  .user-list__link--search span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    // -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .user-list__link--basket {
+    min-width: 165px;
+    max-width: 192px;
   }
 }

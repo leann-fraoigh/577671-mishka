@@ -23,7 +23,7 @@
           <li class="site-list__item"><a class="site-list__link" href="custom-knitting.html">Вязание на&nbsp;заказ</a></li>
         </ul>
         <ul class="page-header__list page-header__list--user-list user-list">
-          <li class="user-list__item" ><a class="user-list__link user-list__link--search" href="#">Поиск по&nbsp;сайту</a></li>
+          <li class="user-list__item user-list__item--search" ><a class="user-list__link user-list__link--search" href="#"><span>Поиск по&nbsp;сайту</span></a></li>
           <li class="user-list__item" ><a class="user-list__link user-list__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <ul class="page-header__list page-header__list--actual-list actual-list">
@@ -35,16 +35,16 @@
         <p class="page-header__note">Бесплатная доставка по&nbsp;России</p>
       </header>
     <main class="page-main">
-      <header class="page-main-header">
+      <header class="page-main-header page-main-header--inner-page">
         <div class="page-main-header__title-container wrapper">
           <h1 class="page-main-header__title ">Вязание на заказ</h1>
         </div>
       </header>
-      <form class="form form__containter" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="form form__container" action="https://echo.htmlacademy.ru" method="POST">
         <div class="wrapper">
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
-        <fieldset class="form__fieldset form__fieldset--type wrapper">
+        <fieldset class="fieldset form__fieldset form__fieldset--type wrapper">
           <div class="form__legend-container"><legend class="form__legend">Тип</legend></div>
           <ul class="form__filter-list">
             <li class="form__filter-option">
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__containter--color">
+        <fieldset class="fieldset form__container--color">
           <div class="form__fieldset form__fieldset--color wrapper">
             <div class="form__legend-container"><legend class="form__legend">Цвет</legend></div><!--Это чтобы fileldset нормально работал как флексбокс. Не нашла другого решения.-->
             <ul class="form__filter-list form__filter-list--color">
@@ -88,9 +88,9 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--customer-name wrapper">
+        <fieldset class="fieldset form__fieldset form__fieldset--customer-name wrapper">
           <div class="form__legend-container"><legend class="form__legend"><abbr title="Фамилия, имя, отчество">ФИО</abbr></legend></div>
-          <div class="form__containter--customer-name">
+          <div class="form__container--customer-name">
             <label class="form__label" for="order-name">Имя:</label>
             <input id="order-name" class="form__input form__input--text" placeholder="Введите ваше имя*" type="text" required>
             <label class="form__label" for="order-surname">Фамилия:</label>
@@ -109,7 +109,7 @@
             <input id="order-email" class="form__input form__input--email" placeholder="Ваш Email*" type="email" required>
           </div>
         </div>
-        <div class="form__fieldset wrapper">
+        <div class="form__fieldset form__fieldset--comment wrapper">
           <label class="form__legend" for="order-comment" title="Дополнительно">Доп:</label>
           <textarea id="order-comment" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>

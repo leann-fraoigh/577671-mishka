@@ -17,13 +17,17 @@ $l-width-padding-left: 175px;
 $black: hsl(0, 0%, 0%);
 $greyish-brown: #444444;
 $seafoam-blue: hsl(168, 54%, 60%);
+$seafoam-blue-active: #59d5bc;
 $greeny-blue: hsl(171, 48%, 55%);
+$greeny-blue-active: #46c1ae;
 $white: hsl(0, 0%, 100%);
 
 $color-primary: $black;
 $color-primary-lighter: $greyish-brown;
 $color-accent: $seafoam-blue;
+$color-accent-active: $seafoam-blue-active;
 $color-accent-darker: $greeny-blue;
+$color-accent-darker-active: $greeny-blue-active;
 $color-newtral: $white;
 
 // для фонов
@@ -31,4 +35,8 @@ $color-newtral: $white;
 $color-newtral-dark: #f1f1f1;
 
 // для линеек и отбивок
-$color-newtral-medium: mix(white, $color-primary, 93%);
+// $color-newtral-medium: mix(white, $color-primary, 93%);
+$color-newtral-medium: #ececec;
+
+// для обводки попапов
+$color-newtral-darkest: #c6c6c6;

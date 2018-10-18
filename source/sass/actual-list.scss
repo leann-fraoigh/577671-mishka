@@ -1,5 +1,7 @@
 .actual-list {
   @include reset-list-style;
+
+  overflow: hidden;
 }
 
 .actual-list__link {
@@ -14,5 +16,28 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $l-width) {
+  .actual-list {
+    display: flex;
+    max-width: 700px;
+  }
+
+  .actual-list__item {
+    display: flex;
+    align-items: center;
+
+    min-height: 65px;
+  }
+
+  .actual-list__link {
+    font-size: 15px;
+    width: 185px;
+  }
+
+  .actual-list__item:not(:first-child) {
+    padding-left: 35px;
   }
 }
