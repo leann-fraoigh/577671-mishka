@@ -73,8 +73,7 @@
 
   border: none;
   border-bottom: 2px solid $color-primary-lighter;
-
-  background: inherit;
+  background: transparent;
 
   &--textarea {
     box-sizing: border-box;
@@ -194,6 +193,8 @@
   .form__fieldset {
     flex-direction: row;
     align-items: baseline;
+
+    background: transparent;
   }
 
   .form__fieldset--type {
@@ -234,6 +235,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+      flex-basis: 100%;
     }
 
   // .form__fieldset--customer-name{
@@ -345,9 +347,15 @@
     }
   }
 
+  .form__fieldset--color {
+    &.wrapper {
+      padding-right: 200px;
+    }
+  }
+
   .form__filter-list--color {
     .form__filter-option {
-      max-width: 175px;
+      width: 200px;
     }
   }
 
