@@ -11,7 +11,7 @@
   line-height: 24px;
 }
 
-.page-header__container--logo {
+.page-header__logo {
   display: flex;
   margin: 0 auto;
 
@@ -20,7 +20,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-link {
   display: flex;
   align-items: center;
 
@@ -58,7 +58,7 @@
     align-items: stretch;
   }
 
-  .page-header__container--logo {
+  .page-header__logo {
     @media (max-width: $m-width-max) {
       margin-left: 0;
       // height: 46px;
@@ -104,7 +104,7 @@
 }
 
 @media (min-width: $l-width) {
-  .page-header__container--logo {
+  .page-header__logo {
     justify-content: center;
 
     width: 149px;
