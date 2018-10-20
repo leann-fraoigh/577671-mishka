@@ -45,7 +45,7 @@
     @include reset-title-style-m;
 
     @media (max-width: $m-width-max) {
-      padding: 96px 55px 77px 55px;
+      padding: 96px 55px 80px 55px;
 
       &--index {
         padding-top: 153px;
@@ -67,7 +67,7 @@
   .page-main-header__title {
     @include reset-title-style-l;
 
-    padding: 93px 170px 100px 170px;
+    padding: 95px 170px 100px 170px;
 
     &--index {
       padding-top: 153px;

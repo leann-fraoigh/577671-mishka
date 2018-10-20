@@ -14,6 +14,7 @@
 
   @media (max-width: $s-width-max) {
     padding: 25px 110px 30px 30px;
+    line-height: 24px;
   }
 
   display: inline-block;
@@ -22,7 +23,6 @@
 
   font-size: 19px;
   font-weight: 600;
-  line-height: 24px;
   color: $color-newtral;
 
   background-color: $color-accent;
@@ -54,7 +54,7 @@
 
 .sub-nav-list__title {
   display: inline-block;
-  max-width: 160px;
+  max-width: 150px;
 }
 
 @media (min-width: $m-width) {
@@ -70,12 +70,12 @@
   }
 
   .sub-nav-list__link {
-    padding: 30px 130px 40px 35px;
+    padding: 28px 130px 28px 35px;
 
     &:hover,
     &:focus {
-      padding-top: 25px;
-      padding-bottom: 45px;
+      padding-top: 23px;
+      padding-bottom: 33px;
     }
   }
 }

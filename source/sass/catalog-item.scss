@@ -108,8 +108,9 @@
 @media (min-width: $l-width) {
   .catalog-item {
     flex-direction: column;
+    flex-shrink: 0;
 
-    width: 316px;
+    width: 314px;
     margin-bottom: 0;
     margin-right: 51px;
   }

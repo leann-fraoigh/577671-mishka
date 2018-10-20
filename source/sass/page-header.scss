@@ -90,13 +90,17 @@
 
   .page-header__note {
     @media (max-width: $m-width-max) {
-      width: 230px;
+      min-width: 230px;
+      max-width: 400px;
+
+      white-space: nowrap;
     }
 
     display: block;
 
     max-height: 34px;
     margin-left: auto;
+    padding-top: 4px;
 
     font-size: 15px;
     overflow: hidden;

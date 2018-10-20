@@ -18,14 +18,6 @@
   }
 }
 
-
-.form__description {
-  @media (max-width: $s-width-max) {
-    font-size: 13px;
-    line-height: 24px;
-  }
-}
-
 .form__fieldset {
   display: flex;
   flex-direction: column;
@@ -41,7 +33,7 @@
 
 .form__legend {
   margin-bottom: 24px;
-  padding: 10px 0 0 0;
+  // padding: 10px 0 0 0;
 
   font-weight: bold;
   text-transform: uppercase;
@@ -107,12 +99,29 @@
   }
 }
 
+.form__description {
+  @media (max-width: $s-width-max) {
+    font-size: 13px;
+    line-height: 24px;
+
+    margin-bottom: 23px;
+  }
+}
+
+.form__fieldset--type {
+  @media (max-width: $s-width-max) {
+    margin-bottom: 8px;
+  }
+}
+
 .form__fieldset--color {
-  margin-bottom: 6px;
+  @media (max-width: $s-width-max) {
+    margin-bottom: 8px;
+  }
 }
 
 .form__fieldset--customer-name {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding-top: 0;
 
   .form__legend {
@@ -132,7 +141,8 @@
   }
 }
 
-.form__container--customer-contacts {
+// .form__container--customer-contacts {
+  .form__section--customer-contacts {
   .form__fieldset {
     @media (max-width: $s-width-max) {
       margin-bottom: 32px;
@@ -159,7 +169,7 @@
 }
 
 .form__footnote {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   @media (max-width: $s-width-max) {
     font-size: 14px;
@@ -226,9 +236,11 @@
 
   .form__fieldset--customer-name {
     @media (max-width: $m-width-max) {
-      margin-bottom: 8px;
+      // margin-bottom: 10px;
+      margin-bottom: 0;
     }
-    padding-top: 50px;
+    // padding-top: 50px;
+    padding-top: 58px;
     padding-bottom: 20px;
 
     .form__inputs-list {
@@ -247,17 +259,20 @@
       padding-top: 10;
 
       @media (max-width: $m-width-max) {
-        margin-bottom: 28px;
+        // margin-bottom: 28px;
+        margin-bottom: 30px;
       }
     }
   }
 
-  .form__container--customer-contacts {
+  .form__section--customer-contacts {
     padding-top: 55px;
-    padding-bottom: 14px;
+    // padding-bottom: 14px;
+    padding-bottom: 24px;
 
     .form__fieldset {
-      margin-bottom: 32px;
+      // margin-bottom: 32px;
+      margin-bottom: 27px;
     }
 
     .form__input {
