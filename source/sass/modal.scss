@@ -44,11 +44,20 @@
 
   line-height: 50px;
 
-  border: 2px solid $color-newtral-medium;
+  border: 2px solid transparentize($color-primary-lighter, 0.9);
 
-  &--current {
+  &:hover,
+  &:focus {
+    border-color: transparentize($color-primary-lighter, 0.7);
+  }
+
+  &:active {
     border-color: $color-accent;
   }
+}
+
+.modal__input:checked ~ .modal__label {
+  border-color: $color-accent;
 }
 
 @media (min-width: $m-width) {
