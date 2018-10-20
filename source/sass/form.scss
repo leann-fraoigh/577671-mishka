@@ -142,7 +142,7 @@
 }
 
 // .form__container--customer-contacts {
-  .form__section--customer-contacts {
+.form__section--customer-contacts {
   .form__fieldset {
     @media (max-width: $s-width-max) {
       margin-bottom: 32px;
@@ -218,7 +218,7 @@
   // }
 
   .form__fieldset--color {
-    padding-top: 57px;
+    padding-top: 55px;
     padding-bottom: 20px;
   }
 
@@ -250,7 +250,7 @@
       flex-basis: 100%;
     }
 
-  // .form__fieldset--customer-name{
+    // .form__fieldset--customer-name{
     .form__label {
       padding-right: 30px;
     }
@@ -266,13 +266,13 @@
   }
 
   .form__section--customer-contacts {
-    padding-top: 55px;
+    padding-top: 57px;
     // padding-bottom: 14px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
 
     .form__fieldset {
       // margin-bottom: 32px;
-      margin-bottom: 27px;
+      margin-bottom: 30px;
     }
 
     .form__input {
