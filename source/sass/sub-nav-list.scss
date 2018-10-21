@@ -12,21 +12,28 @@
 .sub-nav-list__link {
   @include reset-link-style;
 
+  @media (max-width: $s-width-max) {
+    padding: 25px 110px 30px 30px;
+    line-height: 24px;
+  }
+
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  padding: 25px 30px 30px 30px;
 
   font-size: 19px;
   font-weight: 600;
-  line-height: 24px;
   color: $color-newtral;
 
   background-color: $color-accent;
 
   &:hover,
   &:focus {
-    // background-color: satu­rat­e($­color-accent, 6%);
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background-color: $color-accent-active;
+
+    box-shadow: 0 -5px 0 0 $color-accent-active;
   }
 
   &:active {
@@ -34,17 +41,20 @@
   }
 
   &--toys {
-    // background-color: darken(desaturate(adjust-hue($color-accent, 3%), 6), 5);
-    background-color: $greeny-blue;
+    background-color: $color-accent-darker;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent-darker-active;
+
+      box-shadow: 0 -5px 0 0 $color-accent-darker-active;
+    }
   }
 }
 
 .sub-nav-list__title {
   display: inline-block;
-  max-width: 160px;
-
-  font-size: 20px;
-  line-height: 30px;
+  max-width: 150px;
 }
 
 @media (min-width: $m-width) {
@@ -52,5 +62,20 @@
     @include wrapper-padding;
 
     flex-direction: row;
+  }
+
+  .sub-nav-list__item {
+    display: flex;
+    width: 50%;
+  }
+
+  .sub-nav-list__link {
+    padding: 28px 130px 28px 35px;
+
+    &:hover,
+    &:focus {
+      padding-top: 23px;
+      padding-bottom: 33px;
+    }
   }
 }

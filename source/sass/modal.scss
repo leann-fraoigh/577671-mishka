@@ -1,12 +1,27 @@
 .modal {
-  @include wrapper-padding;
-
+  // @include wrapper-padding;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
   padding-bottom: 46px;
+
   text-align: center;
+
+  border: 1px solid $color-newtral-darkest;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {
+  margin-bottom: 0;
+
+  color: $color-primary;
+  text-transform: uppercase;
   font-size: 25px;
+}
+
+.modal__description {
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
 .modal__filter-list {
@@ -29,11 +44,20 @@
 
   line-height: 50px;
 
-  border: 2px solid $color-primary-lighter;
+  border: 2px solid transparentize($color-primary-lighter, 0.9);
 
-  &--current {
+  &:hover,
+  &:focus {
+    border-color: transparentize($color-primary-lighter, 0.7);
+  }
+
+  &:active {
     border-color: $color-accent;
   }
+}
+
+.modal__input:checked ~ .modal__label {
+  border-color: $color-accent;
 }
 
 @media (min-width: $m-width) {
@@ -42,8 +66,8 @@
     width: 566px;
     // min-height: 336px;
     margin: auto;
-    padding-right: 108px;
-    padding-left: 108px;
+    padding-right: 105px;
+    padding-left: 105px;
   }
 
   .modal__title {

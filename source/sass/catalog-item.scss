@@ -1,5 +1,7 @@
 .catalog-item {
-  margin-bottom: 30px;
+  @media (max-width: $s-width-max) {
+    margin-bottom: 30px;
+  }
 
   border: 1px solid $color-newtral-medium;
 
@@ -7,13 +9,21 @@
 }
 
 .catalog-item__image {
+  @media (max-width: $s-width-max) {
+    margin-top: -1px;
+    margin-left: -1px;
+  }
   width: 260px;
   height: 195px;
+
+  vertical-align: bottom;
 }
 
 .catalog-item__title {
   @include reset-title-style;
   @include title-h3;
+
+  margin-top: 17px;
 
   &:hover,
   &:focus {
@@ -25,9 +35,8 @@
   }
 }
 
-.catalog-item__container--description,
-.catalog-item__container--shop {
-  padding: 10px 30px;
+.catalog-item__about {
+  padding: 10px 28px 6px 28px;
 }
 
 .catalog-item__link {
@@ -35,14 +44,21 @@
 }
 
 .catalog-item__description {
+  margin-top: 5px;
+
   font-size: 13px;
 }
 
-.catalog-item__container--shop {
+.catalog-item__shop {
   display: flex;
   align-items: center;
-}
 
+  padding: 7px 28px 12px 28px;
+
+  // @media (max-width: $s-width-max) {
+  box-shadow: 0 -31px 0 -#{$s-width-padding} $color-newtral-medium;
+  // }
+}
 
 .catalog-item__price {
   flex-grow: 1;
@@ -60,29 +76,49 @@
 
 @media (min-width: $m-width) {
   .catalog-item {
+    display: flex;
+
     @media (max-width: $m-width-max) {
-      display: flex;
+      margin-bottom: 54px;
     }
   }
 
-  .catalog-item__containter--info {
-    @media (max-width: $m-width-max) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  .catalog-item__info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+
+    // @media (max-width: $m-width-max) {
+    // }
   }
 
   .catalog-item__image {
     @media (max-width: $m-width-max) {
       width: 334px;
       height: 334px;
+
+      margin-top: -1px;
+      margin-left: -1px;
+      margin-bottom: -1px;
     }
+  }
+
+  .catalog-item__about {
+    padding-bottom: 2px;
+  }
+
+  .catalog-item__shop {
+    padding-top: 4px;
+    padding-bottom: 10px;
   }
 }
 
 @media (min-width: $l-width) {
   .catalog-item {
+    flex-direction: column;
+    flex-shrink: 0;
+
     width: 314px;
     margin-bottom: 0;
     margin-right: 51px;
@@ -91,5 +127,19 @@
   .catalog-item__image {
     width: 316px;
     height: 463px;
+
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+  // правила ниже временные -- проверить, нельзя ли оптимизировать!
+  .catalog-item__description {
+    margin-top: 3px;
+    margin-bottom: 8;
+  }
+
+  .catalog-item__container--shop {
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 }

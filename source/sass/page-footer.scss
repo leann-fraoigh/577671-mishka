@@ -18,7 +18,20 @@
   flex-direction: column;
 }
 
+.page-footer__copywrite {
+  @media (max-width: $s-width-max) {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid $color-newtral-medium;
+  }
+}
+
 @media (min-width: $m-width) {
+  .page-footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
   .page-footer__containter {
     flex-direction: row;
     justify-content: space-between;

@@ -10,8 +10,8 @@
   </head>
   <body class="page">
     <header class="page-header wrapper">
-        <div class="page-header__container--logo">
-          <a class="page-header__logo" href="index.html">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
             <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
           </a>
         </div>
@@ -23,7 +23,7 @@
           <li class="site-list__item"><a class="site-list__link" href="custom-knitting.html">Вязание на&nbsp;заказ</a></li>
         </ul>
         <ul class="page-header__list page-header__list--user-list user-list">
-          <li class="user-list__item" ><a class="user-list__link user-list__link--search" href="#">Поиск по&nbsp;сайту</a></li>
+          <li class="user-list__item user-list__item--search" ><a class="user-list__link user-list__link--search" href="#"><span>Поиск по&nbsp;сайту</span></a></li>
           <li class="user-list__item" ><a class="user-list__link user-list__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <ul class="page-header__list page-header__list--actual-list actual-list">
@@ -35,31 +35,33 @@
         <p class="page-header__note">Бесплатная доставка по&nbsp;России</p>
       </header>
     <main class="page-main">
-      <header class="page-main-header">
+      <header class="page-main-header page-main-header--inner-page">
         <div class="page-main-header__title-container wrapper">
           <h1 class="page-main-header__title ">Вязание на заказ</h1>
         </div>
       </header>
-      <form class="form form__containter" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="wrapper">
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
-        <fieldset class="form__fieldset form__fieldset--type wrapper">
-          <div class="form__legend-container"><legend class="form__legend">Тип</legend></div>
-          <ul class="form__filter-list">
-            <li class="form__filter-option">
-              <input class="form__input form__input--radio visually-hidden" id="order-decoration" name="category" type="radio" checked>
-              <label class="form__label form__label--radio" for="order-decoration">Аксессуар для интерьера</label>
-            </li>
-            <li class="form__filter-option">
-              <input class="form__input form__input--radio visually-hidden" id="order-toy" name="category" type="radio">
-              <label class="form__label form__label--radio" for="order-toy">Детская игрушка</label>
-            </li>
-          </ul>
+        <fieldset class="fieldset form__section">
+          <div class="form__fieldset form__fieldset--type wrapper">
+            <div class="form__legend">Тип</div>
+            <ul class="form__filter-list">
+              <li class="form__filter-option">
+                <input class="form__input form__input--radio visually-hidden" id="order-decoration" name="category" type="radio" value="decoration" checked>
+                <label class="form__label form__label--radio" for="order-decoration">Аксессуар для интерьера</label>
+              </li>
+              <li class="form__filter-option">
+                <input class="form__input form__input--radio visually-hidden" id="order-toy" name="category" type="radio" value="toy">
+                <label class="form__label form__label--radio" for="order-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
-        <fieldset class="form__containter--color">
+        <fieldset class="form__section fieldset">
           <div class="form__fieldset form__fieldset--color wrapper">
-            <div class="form__legend-container"><legend class="form__legend">Цвет</legend></div><!--Это чтобы fileldset нормально работал как флексбокс. Не нашла другого решения.-->
+            <div class="form__legend">Цвет</div>
             <ul class="form__filter-list form__filter-list--color">
               <li class="form__filter-option">
                 <input id="order-white" class="form__input form__input--checkbox visually-hidden" name="white" type="checkbox" checked>
@@ -88,34 +90,39 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--customer-name wrapper">
-          <div class="form__legend-container"><legend class="form__legend"><abbr title="Фамилия, имя, отчество">ФИО</abbr></legend></div>
-          <div class="form__containter--customer-name">
-            <label class="form__label" for="order-name">Имя:</label>
-            <input id="order-name" class="form__input form__input--text" placeholder="Введите ваше имя*" type="text" required>
-            <label class="form__label" for="order-surname">Фамилия:</label>
-            <input id="order-surname" class="form__input form__input--text" placeholder="Укажите фамилию*" type="text" required>
-            <label class="form__label" for="order-patronym">Отчество:</label>
-            <input id="order-patronym" class="form__input form__input--text" placeholder="Отчество, если желаете" type="text">
+        <fieldset class="form__section fieldset">
+          <div class="form__fieldset form__fieldset--customer-name wrapper">
+            <div class="form__legend"><abbr title="Фамилия, имя, отчество">ФИО</abbr></div>
+            <!-- <div class="form__container--customer-name"> -->
+            <div class="form__inputs-list">
+              <label class="form__label" for="order-name">Имя:</label>
+              <input id="order-name" class="form__input form__input--text" placeholder="Введите ваше имя*" type="text" name="name" required>
+              <label class="form__label" for="order-surname">Фамилия:</label>
+              <input id="order-surname" class="form__input form__input--text" placeholder="Укажите фамилию*" type="text" name="surname" required>
+              <label class="form__label" for="order-patronym">Отчество:</label>
+              <input id="order-patronym" class="form__input form__input--text" placeholder="Отчество, если желаете" type="text" name="partonym">
+            </div>
           </div>
         </fieldset>
-        <div class="form__container--customer-contacts">
+        <div class="form__section form__section--customer-contacts">
           <div class="form__fieldset wrapper">
             <label class="form__legend" for="order-phone" title="Ваш телефон">Тел</label>
-            <input id="order-phone" class="form__input form__input--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" required>
+            <input id="order-phone" class="form__input form__input--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="phone" required>
           </div>
           <div class="form__fieldset wrapper">
             <label class="form__legend" for="order-email" title="Ваш электронный адрес">E-mail</label>
-            <input id="order-email" class="form__input form__input--email" placeholder="Ваш Email*" type="email" required>
+            <input id="order-email" class="form__input form__input--email" placeholder="Ваш Email*" type="email" name="email" required>
           </div>
         </div>
-        <div class="form__fieldset wrapper">
-          <label class="form__legend" for="order-comment" title="Дополнительно">Доп:</label>
-          <textarea id="order-comment" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
-        <div class="form__container--send-button wrapper">
-          <p class="form__footnote">* Поля обязательны для заполнения</p>
-          <button class="form__send-button button" type="submit">Отправить заказ</button>
+        <div class="form__section">
+          <div class="form__fieldset form__fieldset--comment wrapper">
+            <label class="form__legend" for="order-comment" title="Дополнительно">Доп:</label>
+            <textarea id="order-comment" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
+          </div>
+          <div class="form__footer wrapper">
+            <p class="form__footnote">* Поля обязательны для заполнения</p>
+            <button class="form__send-button button" type="submit">Отправить заказ</button>
+          </div>
         </div>
       </form>
     </main>

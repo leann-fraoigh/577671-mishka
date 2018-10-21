@@ -1,6 +1,6 @@
 .about {
   @include wrapper-padding;
-  padding-top: 5px;
+  // padding-top: 5px;
   margin-bottom: 38px;
 
   color: $color-primary;
@@ -18,17 +18,29 @@
 }
 
 .about__item {
-  padding-top: 63px;
-  padding-bottom: 20px;
-
   font-size: 17px;
   line-height: 20px;
   font-weight: 600;
+
+  @media (max-width: $s-width-max) {
+    padding-top: 63px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: $m-width) {
+  .about {
+    @media (max-width: $m-width-max) {
+      margin-bottom: 55px;
+    }
+  }
+
   .about__title {
     @include reset-title-style-m;
+
+    @media (max-width: $m-width-max) {
+      margin-top: 50px;
+    }
   }
 
   .about__list {
@@ -39,6 +51,9 @@
   .about__item {
     width: 300px;
     margin-right: 34px;
+    padding-top: 81px;
+    padding-bottom: 30px;
+
     font-size: 20px;
     line-height: 22px;
 
@@ -71,10 +86,14 @@
 @media (min-width: $l-width) {
   .about {
     padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
+
+    margin-bottom: 60px;
   }
 
   .about__title {
     @include reset-title-style-l;
+
+    margin-top: 60px;
   }
 
   .about__item {
