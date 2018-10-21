@@ -2,12 +2,16 @@
   padding-top: 5px;
 
   @media (max-width: $s-width-max) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 38px;
   }
 }
 
 .contacts__container {
   @media (max-width: $s-width-max) {
+    @include wrapper;
     @include wrapper-padding;
   }
 }
@@ -61,10 +65,10 @@
 }
 
 .contacts__map {
-  @media (max-width: $s-width-max) {
-    @include wrapper-full-width;
-  }
-
+  // @media (max-width: $s-width-max) {
+  //   @include wrapper-full-width;
+  // }
+  width: 100%;
   min-height: 457px;
   margin-bottom: 39px;
 
