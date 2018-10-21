@@ -152,7 +152,7 @@
   }
 
   .contacts__container {
-    width: 300px;
+    width: 320px;
   }
 
   .contacts__title {
@@ -165,11 +165,16 @@
     flex-direction: column;
   }
 
+  .contacts__attributes-item {
+    width: 100%;
+  }
+
   .contacts__map {
     width: 525px;
     height: 457px;
-    margin-top: -390px;
+    // margin-top: -390px;
     margin-left: 352px;
+    margin-top: -360px;
   }
 
   .contacts__container--feedback {
