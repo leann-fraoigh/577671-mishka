@@ -143,7 +143,6 @@
         width: 20px;
         height: 10px;
       }
-
     }
 
     &:active {
@@ -180,6 +179,7 @@
       ~ .form__label::after {
         border-color: $color-primary-lighter;
       }
+
       ~ .form__label:active::after {
         border-color: transparent;
       }

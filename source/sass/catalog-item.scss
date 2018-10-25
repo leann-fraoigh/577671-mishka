@@ -36,9 +36,9 @@
 }
 
 .catalog-item__about {
-    padding-top: 10px;
+  padding-top: 10px;
 
-    @media (max-width: $s-width-max) {
+  @media (max-width: $s-width-max) {
     padding-bottom: 6px;
     padding-left: 28px;
     padding-right: 28px;
