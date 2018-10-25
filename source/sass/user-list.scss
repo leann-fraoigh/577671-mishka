@@ -12,6 +12,7 @@
   @include reset-link-style;
 
   display: block;
+  position: relative;
 
   @media (max-width: $s-width-max) {
     padding: 26px 30px 28px 76px;
@@ -22,10 +23,33 @@
   &:hover,
   &:focus {
     color: transparentize($color-primary, 0.4);
+
+    .user-list__icon {
+      fill: $color-accent;
+    }
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+
+  fill: transparentize($color-primary, 0.8);
+
+  &--basket {
+    left: 30px;
+    top: calc(50% - 9px);
+  }
+
+  &--search {
+    top: calc(50% - 9px);
+
+    @media (max-width: $s-width-max) {
+      left: 30px;
+    }
   }
 }
 
@@ -45,7 +69,11 @@
   }
 
   .user-list__link {
-    padding-left: 83px;
+    padding-left: 80px;
+
+    .user-list__link {
+      padding-left: 83px;
+    }
   }
 
   .user-list__link--search {
@@ -72,5 +100,11 @@
     max-width: 192px;
 
     letter-spacing: -0.02em;
+  }
+
+  .user-list__icon {
+    &--search {
+      left: calc(50% - 9px);
+    }
   }
 }

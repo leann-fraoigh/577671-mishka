@@ -17,6 +17,7 @@
     line-height: 24px;
   }
 
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -25,23 +26,71 @@
   font-weight: 600;
   color: $color-newtral;
 
-  background-color: $color-accent;
+  &::after {
+    content: "";
+    position: absolute;
+
+    @media (max-width: $s-width-max) {
+      top: calc(50% - 30px);
+    }
+
+    opacity: 0.5;
+
+    background-repeat: no-repeat;
+  }
 
   &:hover,
   &:focus {
     padding-top: 20px;
     padding-bottom: 35px;
-    background-color: $color-accent-active;
 
     box-shadow: 0 -5px 0 0 $color-accent-active;
+
+    &::after {
+      opacity: 0.7;
+      transform: translateY(-5px);
+    }
   }
 
   &:active {
     color: transparentize($color-newtral, 0.7);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--decoration {
+    background-color: $color-accent;
+
+    &::after {
+      right: 36px;
+
+      width: 40px;
+      height: 62px;
+
+      background-image: url("../img/icon-interior.svg");
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent-active;
+    }
   }
 
   &--toys {
     background-color: $color-accent-darker;
+
+    &::after {
+      @media (max-width: $s-width-max) {
+        right: 27px;
+      }
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-toy.svg");
+    }
 
     &:hover,
     &:focus {
@@ -72,10 +121,20 @@
   .sub-nav-list__link {
     padding: 28px 130px 28px 35px;
 
+    &::after {
+      top: calc(50% - 27px);
+    }
+
     &:hover,
     &:focus {
       padding-top: 23px;
       padding-bottom: 33px;
+    }
+
+    &--toys {
+      &::after {
+        right: 34px;
+      }
     }
   }
 }

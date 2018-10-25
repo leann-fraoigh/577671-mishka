@@ -18,6 +18,8 @@
 }
 
 .about__item {
+  position: relative;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 600;
@@ -25,6 +27,53 @@
   @media (max-width: $s-width-max) {
     padding-top: 63px;
     padding-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 47px;
+    height: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--eco::before {
+    background-image: url("../img/icon-feature-flower.svg");
+    background-size: 32px 37px;
+  }
+
+  &--scandi::before {
+    background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
+    background-position-y: top;
+  }
+
+  &--likes::before {
+    background-image: url("../img/icon-feature-heart.svg");
+    background-size: 34px 27px;
+  }
+
+  &--handworked::before {
+    background-image: url("../img/icon-feature-ball.svg");
+    background-size: 35px 34px;
+  }
+
+  &--local::before {
+    left: -5px;
+    top: 5px;
+    width: 55px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-size: 55px 23px;
+  }
+
+  &--wrapped::before {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-size: 33px 32px;
   }
 }
 
@@ -79,6 +128,10 @@
 
     &:nth-child(6) {
       order: 6;
+    }
+
+    &::before {
+      top: 25px;
     }
   }
 }

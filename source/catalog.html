@@ -12,7 +12,11 @@
     <header class="page-header wrapper">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+            <picture class="page-header__logo-image-container">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+            </picture>
           </a>
         </div>
         <!-- <nav class="page-header__nav nav"> -->
@@ -23,11 +27,21 @@
           <li class="site-list__item"><a class="site-list__link" href="custom-knitting.html">Вязание на&nbsp;заказ</a></li>
         </ul>
         <ul class="page-header__list page-header__list--user-list user-list">
-          <li class="user-list__item user-list__item--search" ><a class="user-list__link user-list__link--search" href="#"><span>Поиск по&nbsp;сайту</span></a></li>
-          <li class="user-list__item" ><a class="user-list__link user-list__link--basket" href="#">Корзина: пока пуста</a></li>
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link user-list__link--search" href="#">
+              <svg class="user-list__icon user-list__icon--search" width="18" height="18"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+              <span>Поиск по&nbsp;сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--basket" href="#">
+              <svg class="user-list__icon user-list__icon--basket" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              Корзина: пока пуста
+            </a>
+          </li>
         </ul>
         <ul class="page-header__list page-header__list--actual-list actual-list">
-          <li class="actual-list__item" ><a class="actual-list__link" href="#">Новые поступления</a></li>
+          <li class="actual-list__item"><a class="actual-list__link" href="#">Новые поступления</a></li>
           <li class="actual-list__item" ><a class="actual-list__link" href="#">Распродажа</a></li>
         </ul>
         <!-- </div> -->
@@ -44,7 +58,11 @@
         <ul class="catalog__list">
           <li class="catalog-item">
             <a href="#">
-              <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик  голубом комбинезоне" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__about">
@@ -55,13 +73,20 @@
               </div>
               <div class="catalog-item__shop">
                 <p class="catalog-item__price">1 200 руб.</p>
-                <a class="catalog-item__order" href="#"><span class="visually-hidden">Положить в корзину</span></a>
+                <a class="catalog-item__order" href="#">
+                  <span class="visually-hidden">Положить в корзину</span>
+                  <svg class="catalog-item__order-icon" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+                </a>
               </div>
             </div>
           </li>
           <li class="catalog__item catalog-item">
             <a href="#">
-              <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка крупной вязки, белая сверху и персиковая снизу" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__about">
@@ -72,23 +97,33 @@
               </div>
               <div class="catalog-item__shop">
                 <p class="catalog-item__price">690 руб.</p>
-                <a class="catalog-item__order" href="#"><span class="visually-hidden">Положить в корзину</span></a>
+                <a class="catalog-item__order" href="#">
+                  <span class="visually-hidden">Положить в корзину</span>
+                  <svg class="catalog-item__order-icon" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+                </a>
               </div>
             </div>
           </li>
           <li class="catalog__item catalog-item">
             <a href="#">
-              <img class="catalog-item__image" src="https://via.placeholder.com/260x195" alt="" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Нежно-зеленая цилиндричесикая корзина с белыми бортиками" width="260" height="195">
+              </picture>
             </a>
             <div class="catalog-item__info">
               <div class="catalog-item__about">
                 <h2 class="catalog-item__title">
-                  <a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h2>
+                  <a class="catalog-item__link" href="#">Большая корзинка для&nbsp;игрушек</a></h2>
                 <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="catalog-item__shop">
                 <p class="catalog-item__price">1 500 руб.</p>
-                <a class="catalog-item__order" href="#"><span class="visually-hidden">Положить в корзину</span></a>
+                <a class="catalog-item__order" href="#">
+                  <span class="visually-hidden">Положить в корзину</span>
+                  <svg class="catalog-item__order-icon" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+                </a>
               </div>
             </div>
           </li>
@@ -97,9 +132,14 @@
       <div class="article wrapper">
         <div class="article__item">
           <h2 class="article__title article__title--video">Процесс производства</h2>
-          <video class="article__video video" width="260" height="150" poster="https://via.placeholder.com/260x150">
+          <!-- <video class="article__video video" width="260" height="150" poster="https://via.placeholder.com/260x150">
             <source src="https://staging.coverr.co/s3/mp4/Snow-motion.mp4" type="video/mp4">
-          </video>
+          </video> -->
+          <picture class="article__video">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="article__video-poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Нежно-зеленая цилиндричесикая корзина с белыми бортиками" width="260" height="150">
+          </picture>
           <p class="article__lead">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="article__more-button button" href="#">Сделать заказ</a>
         </div>
@@ -107,18 +147,33 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__containter wrapper">
-        <a class="page-footer__logo" href="#"><img class="page-footer__logo-image" src="#" alt="Логотип магазина Мишка" width="102" height="34"></a>
+        <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Логотип магазина Мишка" width="102" height="34"></a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Мы в&nbsp;социальных сетях</h2>
           <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social__icon" width="22" height="21"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__icon" width="15" height="28"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="social__icon" width="23" height="20"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+              </a>
+            </li>
           </ul>
         </section>
         <p class="page-footer__copywrite copywrite">
           <a class="copywrite__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
-            <img class="copywrite__image" src="https://via.placeholder.com/27x34" alt="HTMLacademy" width="27" height="34">
+            <svg class="copywrite__image" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
           </a>
         </p>
       </div>
@@ -144,5 +199,6 @@
         <button class="modal__form-button button button--accent" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

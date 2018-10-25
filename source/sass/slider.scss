@@ -8,13 +8,31 @@
   flex-grow: 1;
 
   min-width: 130px;
-  min-height: 52px;
+  min-height: 50px;
 
   border: 1px solid $color-newtral-medium;
+
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: center center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__control--left {
   margin-right: -1px;
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.slider__control--right {
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $m-width) {
