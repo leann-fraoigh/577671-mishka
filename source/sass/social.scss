@@ -18,8 +18,23 @@
 .social__link {
   @include reset-link-style;
 
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 30px;
   height: 30px;
+
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $color-accent-darker-active;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
 }

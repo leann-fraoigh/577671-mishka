@@ -12,6 +12,10 @@ $l-width: 1150px;
 $l-width-padding: 50px;
 $l-width-padding-left: 175px;
 
+// Ретина
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // Серый фон #F1F1F1
 
 $black: hsl(0, 0%, 0%);
@@ -40,3 +44,6 @@ $color-newtral-medium: #ececec;
 
 // для обводки попапов
 $color-newtral-darkest: #c6c6c6;
+
+// Для иконок в подменю
+$blue-green: #149080;

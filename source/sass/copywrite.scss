@@ -15,6 +15,13 @@
 
   line-height: 80px;
 
+  &:hover,
+  &:focus {
+    .copywrite__image {
+      fill: $color-accent-darker-active;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -22,4 +29,6 @@
 
 .copywrite__image {
   margin-left: 25px;
+
+  fill: $color-accent;
 }

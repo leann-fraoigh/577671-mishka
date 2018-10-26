@@ -1,4 +1,20 @@
 // Обертки
+@mixin wrapper {
+  box-sizing: border-box;
+  width: $s-width;
+  margin-right: auto;
+  margin-left: auto;
+  // outline: 1px dashed blueviolet;
+  // background-color: #fff8f8;
+
+  @media (min-width: $m-width) {
+    width: $m-width;
+  }
+
+  @media (min-width: $l-width) {
+    width: $l-width;
+  }
+}
 
 @mixin wrapper-padding {
   // box-sizing: border-box;
