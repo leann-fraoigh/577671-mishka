@@ -119,10 +119,10 @@
   }
 
   .sub-nav-list__link {
-    padding: 28px 130px 28px 35px;
+    padding: 28px 130px 30px 35px;
 
     &::after {
-      top: calc(50% - 27px);
+      top: calc(50% - 28px);
     }
 
     &:hover,

@@ -47,6 +47,7 @@
 
 @media (min-width: $m-width) {
   .customer-reviews {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -62,6 +63,24 @@
     @media (max-width: $m-width-max) {
       margin-bottom: 85px;
       padding-top: 78px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      @media (max-width: $m-width-max) {
+        bottom: -85px;
+        left: 0;
+        width: $m-width;
+        height: 16px;
+      }
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      transform: scale(1, -1);
     }
   }
 
@@ -118,6 +137,14 @@
     margin-bottom: 90px;
 
     background-position: 50px 0;
+
+    &::after {
+      bottom: -88px;
+      left: $l-width-padding;
+
+      width: calc(#{$l-width} - #{$l-width-padding} * 2);
+      height: 22px;
+    }
   }
 
   .customer-reviews__title {

@@ -43,6 +43,29 @@
     &--inner-page {
       margin-bottom: 50px;
     }
+
+    .wrapper {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+
+        @media (max-width: $m-width-max) {
+          bottom: -24px;
+          left: 0;
+          width: $m-width;
+        }
+
+        height: 34px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-repeat: no-repeat;
+
+        @media (max-width: $m-width-max) {
+          background-size: contain;
+        }
+      }
+    }
   }
 
   .page-main-header__title {
@@ -77,6 +100,16 @@
 
     &--inner-page {
       margin-bottom: 123px;
+    }
+
+    .wrapper {
+      &::after {
+        bottom: -17px;
+        left: -$l-width-padding;
+
+        width: calc(#{$l-width} + #{$l-width-padding} * 2);
+        background-size: cover;
+      }
     }
   }
 
