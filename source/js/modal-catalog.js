@@ -1,8 +1,15 @@
 var addToCartButton = document.querySelectorAll(".catalog-item__order");
-var buttonsArray = Array.from(addToCartButton);
+// var buttonsArray = Array.from(addToCartButton);
+
+var buttonsArray = [],
+    length = addToCartButton.length;
 var orderModal = document.querySelector(".modal--add-to-cart");
 var orderForm = orderModal.querySelector(".modal__form");
 var overlay = document.querySelector(".overlay");
+
+for (var i = 0; i < length; i++) {
+  buttonsArray.push(addToCartButton[i]);
+}
 
 for(var i = 0; i < buttonsArray.length; i++) {
   buttonsArray[i].addEventListener("click", function(evt) {
