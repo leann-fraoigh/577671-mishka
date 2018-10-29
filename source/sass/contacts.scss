@@ -100,12 +100,21 @@
     }
   }
 
+  .contacts__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .contacts__title {
     @include reset-title-style-m;
 
     position: relative;
 
     margin-bottom: 47px;
+
+    @media (max-width: $m-width-max) {
+      padding-right: 80px;
+    }
 
     &::after {
       content: "";
