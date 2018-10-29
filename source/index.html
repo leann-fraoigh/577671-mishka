@@ -11,7 +11,8 @@
     </script>
   </head>
   <body class="page">
-    <header class="page-header wrapper">
+    <!-- Открытое меню page-header--menu-opened; закрытое меню page-header--menu-closed -->
+    <header class="page-header page-header--no-js wrapper">
       <div class="page-header__logo">
         <a class="page-header__logo-link">
           <picture class="page-header__logo-image-container">
@@ -184,6 +185,9 @@
         </p>
       </div>
     </footer>
+    <!-- Открытый оверлей - overlay--showed -->
+    <div class="overlay"></div>
+    <!-- Открытое модальное - modal--opened -->
     <section class="modal modal--add-to-cart wrapper">
       <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
@@ -205,6 +209,8 @@
         <button class="modal__form-button button button--accent" type="submit">Добавить</button>
       </form>
     </section>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
     <!-- <script src="js/map.js"></script> -->
     <script src="js/picturefill.js"></script>
   </body>
