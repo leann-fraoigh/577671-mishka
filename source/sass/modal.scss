@@ -75,6 +75,10 @@
   border-color: $color-accent;
 }
 
+.modal__form-button {
+  min-height: 53px;
+}
+
 @media (min-width: $m-width) {
   .modal {
     // width: 350px; Это ширин если без оберки с бордер-бокс

@@ -54,9 +54,14 @@
 }
 
 .special-offer__attribute-label {
-  width: 85px;
+  // width: 85px;
   padding: 10px 0;
+
+  &:first-child {
+    width: 97px;
+  }
 }
+
 //
 // .special-offer__image-container {
 //   @media (max-width: $s-width-max) {

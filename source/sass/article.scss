@@ -141,15 +141,16 @@
     padding-right: 57px;
   }
 
-  .article__title,
   .article__lead,
   .article__more-button {
     width: 230px;
   }
 
   .article__title {
+    width: 220px;
     margin-top: -416px;
     padding-top: 50px;
+    padding-right: 10px;
 
     &::before {
       top: 0;

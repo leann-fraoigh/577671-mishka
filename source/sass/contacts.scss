@@ -80,7 +80,7 @@
   @media (max-width: $s-width-max) {
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
     background-size: 67px 100px, 322px 457px;
-    background-position: 53% 40%, center;
+    background-position: 52% 40%, center;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -140,7 +140,7 @@
   }
 
   .contacts__attribute-label {
-    padding-right: 20px;
+    padding-right: 25px;
   }
 
   .contacts__attribute {
@@ -160,7 +160,7 @@
 
       background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
       background-size: 67px 100px, 768px 457px;
-      background-position: 52% 40%, center;
+      background-position: 363px 140px, center;
       background-repeat: no-repeat, no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -219,7 +219,7 @@
     width: 525px;
     height: 457px;
     // margin-top: -390px;
-    margin-left: 352px;
+    margin-left: 350px;
     margin-top: -360px;
 
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");

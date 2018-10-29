@@ -69,17 +69,19 @@
   }
 
   .user-list__link {
-    padding-left: 80px;
-
-    .user-list__link {
-      padding-left: 83px;
-    }
+    padding-left: 81px;
   }
 
   .user-list__link--search {
     // min-width: 82px;
     height: 88px;
   }
+
+  // .user-list__link--basket {
+  //   @media (max-width: $m-width-max) {
+  //     padding-bottom: 3px;
+  //   }
+  // }
 
   .user-list__link--search span {
     position: absolute;
@@ -99,7 +101,9 @@
     min-width: 165px;
     max-width: 192px;
 
-    letter-spacing: -0.02em;
+    @supports (-webkit-appearance:none) {
+      letter-spacing: 0.05em;
+    }
   }
 
   .user-list__icon {

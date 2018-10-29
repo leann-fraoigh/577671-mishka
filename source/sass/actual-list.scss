@@ -33,8 +33,10 @@
   }
 
   .actual-list__link {
-    font-size: 15px;
     width: 185px;
+    padding-bottom: 3px;
+
+    font-size: 15px;
   }
 
   .actual-list__item:not(:first-child) {

@@ -40,6 +40,8 @@
 
     &--menu-closed {
       .page-header__menu-toggle {
+
+        background-size: 20px 14px;
         background-image: url("../img/icon-menu-open.svg");
       }
 
@@ -93,6 +95,8 @@
 
 .page-header__list--actual-list {
   display: none;
+
+  z-index: 50;
 }
 
 .page-header__note {
@@ -100,6 +104,8 @@
 
   font-weight: 400;
   color: $color-primary-lighter;
+
+  z-index: 50;
 }
 
 @media (min-width: $m-width) {
@@ -141,6 +147,7 @@
     @media (max-width: $m-width-max) {
       max-width: 430px;
     }
+    z-index: 50;
   }
 
   .page-header__list--user-list {
