@@ -54,9 +54,14 @@
 }
 
 .special-offer__attribute-label {
-  width: 85px;
+  // width: 85px;
   padding: 10px 0;
+
+  &:first-child {
+    width: 97px;
+  }
 }
+
 //
 // .special-offer__image-container {
 //   @media (max-width: $s-width-max) {
@@ -83,6 +88,28 @@
 }
 
 @media (min-width: $m-width) {
+  .special-offer {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      @media (max-width: $m-width-max) {
+        bottom: 2px;
+        left: 0;
+        width: $m-width;
+        height: 16px;
+      }
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      transform: scale(1, -1);
+    }
+  }
+
   .special-offer__item {
     flex-direction: row;
   }
@@ -152,6 +179,14 @@
 @media (min-width: $l-width) {
   .special-offer {
     padding-bottom: 30px;
+
+    &::after {
+      bottom: 3px;
+      left: $l-width-padding;
+
+      width: calc(#{$l-width} - #{$l-width-padding} * 2);
+      height: 22px;
+    }
   }
 
   .special-offer__list {

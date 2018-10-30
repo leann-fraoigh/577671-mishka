@@ -28,7 +28,16 @@
 }
 
 .copywrite__image {
+  margin-top: 3px;
   margin-left: 25px;
 
   fill: $color-accent;
+}
+
+@media (min-width: $m-width) {
+  .copywrite__link {
+    @supports (-webkit-appearance:none) {
+      letter-spacing: 0.06em;
+    }
+  }
 }

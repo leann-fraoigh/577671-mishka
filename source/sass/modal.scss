@@ -1,5 +1,12 @@
 .modal {
   // @include wrapper-padding;
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -9,6 +16,14 @@
 
   border: 1px solid $color-newtral-darkest;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  background-color: $color-newtral;
+
+  z-index: 500;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal__title {
@@ -58,6 +73,10 @@
 
 .modal__input:checked ~ .modal__label {
   border-color: $color-accent;
+}
+
+.modal__form-button {
+  min-height: 53px;
 }
 
 @media (min-width: $m-width) {
