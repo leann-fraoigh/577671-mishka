@@ -1,7 +1,7 @@
 .copywrite {
   min-height: 80px;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 700;
   color: $color-primary;
   text-align: center;
 }
@@ -37,7 +37,7 @@
 @media (min-width: $m-width) {
   .copywrite__link {
     @supports (-webkit-appearance:none) {
-      letter-spacing: 0.06em;
+      // letter-spacing: 0.06em;
     }
   }
 }
