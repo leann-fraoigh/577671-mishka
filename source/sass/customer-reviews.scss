@@ -31,7 +31,8 @@
   margin-bottom: 3px;
 
   line-height: 24px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
   color: $color-primary;
 }
 
@@ -108,6 +109,12 @@
   .customer-reviews__author {
     @media (max-width: $m-width-max) {
       max-width: 450px;
+    }
+  }
+
+  .customer-reviews__author-name {
+    @media (max-width: $m-width-max) {
+      font-size: 18px;
     }
   }
 

@@ -69,7 +69,7 @@
   }
 
   .user-list__link {
-    padding-left: 81px;
+    padding-left: 83px;
   }
 
   .user-list__link--search {
@@ -102,7 +102,7 @@
     max-width: 192px;
 
     @supports (-webkit-appearance:none) {
-      letter-spacing: 0.05em;
+      // letter-spacing: 0.05em;
     }
   }
 
