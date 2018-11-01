@@ -73,15 +73,8 @@
   }
 
   .user-list__link--search {
-    // min-width: 82px;
     height: 88px;
   }
-
-  // .user-list__link--basket {
-  //   @media (max-width: $m-width-max) {
-  //     padding-bottom: 3px;
-  //   }
-  // }
 
   .user-list__link--search span {
     position: absolute;
@@ -91,7 +84,6 @@
     padding: 0;
     border: 0;
     white-space: nowrap;
-    // -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -100,10 +92,6 @@
   .user-list__link--basket {
     min-width: 165px;
     max-width: 192px;
-
-    @supports (-webkit-appearance:none) {
-      // letter-spacing: 0.05em;
-    }
   }
 
   .user-list__icon {

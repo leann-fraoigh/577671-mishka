@@ -36,7 +36,6 @@
 .form__legend {
   position: relative;
   margin-bottom: 24px;
-  // padding: 10px 0 0 0;
 
   font-weight: bold;
   text-transform: uppercase;
@@ -93,7 +92,6 @@
 
     &:active {
       &::before {
-        // Не срабатывает opacify :(
         border-color: rgba(68, 68, 68, 0.3);
       }
     }
@@ -153,7 +151,6 @@
   }
 }
 
-// Хаос в отступах, поправлю.
 .form__input {
   font-family: inherit;
   font-size: inherit;
@@ -285,7 +282,6 @@
   }
 }
 
-// .form__container--customer-contacts {
 .form__section--customer-contacts {
   .form__fieldset {
     @media (max-width: $s-width-max) {
@@ -362,11 +358,6 @@
     padding-bottom: 20px;
   }
 
-  // .form__fieldset--color,
-  // .form__container--customer-contacts {
-  //   background-color: $color-newtral-dark;
-  // }
-
   .form__fieldset--color {
     padding-top: 55px;
     padding-bottom: 20px;
@@ -386,10 +377,8 @@
 
   .form__fieldset--customer-name {
     @media (max-width: $m-width-max) {
-      // margin-bottom: 10px;
       margin-bottom: 0;
     }
-    // padding-top: 50px;
     padding-top: 58px;
     padding-bottom: 20px;
 
@@ -408,7 +397,6 @@
       padding-top: 10;
 
       @media (max-width: $m-width-max) {
-        // margin-bottom: 28px;
         margin-bottom: 30px;
       }
     }
@@ -416,11 +404,9 @@
 
   .form__section--customer-contacts {
     padding-top: 57px;
-    // padding-bottom: 14px;
     padding-bottom: 20px;
 
     .form__fieldset {
-      // margin-bottom: 32px;
       margin-bottom: 30px;
     }
 
@@ -566,7 +552,6 @@
     }
   }
 
-  // .form__container--customer-name {
   .form__fieldset--customer-name {
     margin-bottom: 0;
 

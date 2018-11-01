@@ -87,10 +87,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  // @media (min-width: $s-width) and (max-width: $s-width-max) {
-  //   margin-left: 60px;
-  // }
 }
 
 .page-header__list--actual-list {
@@ -118,13 +114,11 @@
   .page-header__logo {
     @media (max-width: $m-width-max) {
       margin-left: 0;
-      // height: 46px;
     }
     order: -2;
     justify-content: flex-start;
 
     height: 88px;
-    // width: 300px;
     padding-left: 0;
   }
 
@@ -181,7 +175,6 @@
     justify-content: center;
 
     width: 149px;
-    // height: 88px;
     padding-right: 40px;
   }
 
@@ -195,12 +188,7 @@
     width: 410px;
   }
 
-  // .page-header__list--user-list {
-  //   padding-left: 60px;
-  // }
-
   .page-header__list--actual-list {
-    // display: block;
     min-height: 60px;
   }
 
