@@ -59,6 +59,12 @@
   &:first-child {
     width: 97px;
   }
+
+  @media (max-width: $s-width-max) {
+    &:last-child {
+      max-width: 163px;
+    }
+  }
 }
 
 .special-offer__price {

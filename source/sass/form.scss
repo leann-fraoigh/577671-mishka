@@ -516,6 +516,19 @@
   }
 }
 
+@media (min-width: $m-width) {
+  .form__fieldset--customer-name .form__label {
+    max-width: 115px;
+  }
+
+  .form__icon--phone {
+    top: 4px;
+  }
+
+  .form__icon--mail {
+    top: 10px;
+  }
+}
 
 @media (min-width: $l-width) {
   .form .wrapper {
@@ -528,7 +541,8 @@
   }
 
   .form__legend {
-    width: 115px;
+    width: 100px;
+    padding-right: 15px;
   }
 
   .form__label {
