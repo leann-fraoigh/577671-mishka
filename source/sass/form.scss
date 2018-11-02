@@ -151,6 +151,11 @@
   }
 }
 
+.form__input:focus ~ .form__label--radio::before,
+.form__input:focus ~ .form__label--checkbox::before {
+  border-color: $seafoam-blue;
+}
+
 .form__input {
   font-family: inherit;
   font-size: inherit;

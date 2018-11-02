@@ -33,10 +33,3 @@
 
   fill: $color-accent;
 }
-
-@media (min-width: $m-width) {
-  .copywrite__link {
-    @supports (-webkit-appearance:none) {
-    }
-  }
-}
