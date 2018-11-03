@@ -16,8 +16,6 @@ $l-width-padding-left: 175px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-// Серый фон #F1F1F1
-
 $black: hsl(0, 0%, 0%);
 $greyish-brown: #444444;
 $seafoam-blue: hsl(168, 54%, 60%);
@@ -35,11 +33,9 @@ $color-accent-darker-active: $greeny-blue-active;
 $color-newtral: $white;
 
 // для фонов
-// $color-newtral-dark: mix(white, $color-primary, 95%);
 $color-newtral-dark: #f1f1f1;
 
 // для линеек и отбивок
-// $color-newtral-medium: mix(white, $color-primary, 93%);
 $color-newtral-medium: #ececec;
 
 // для обводки попапов

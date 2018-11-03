@@ -9,10 +9,6 @@
 .site-list__item {
   @media (max-width: $s-width-max) {
     border-top: 1px solid $color-newtral-medium;
-
-    // &:first-child {
-    //   border-top: 1px solid $color-newtral-medium;
-    // }
   }
 
   overflow: hidden;
@@ -26,8 +22,6 @@
   @media (max-width: $s-width-max) {
     font-size: 17px;
     padding: 26px 30px 28px 76px;
-
-    // border-bottom: 1px solid $color-newtral-medium;
   }
 
   &:hover,

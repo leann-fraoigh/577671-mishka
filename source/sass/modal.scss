@@ -1,5 +1,4 @@
 .modal {
-  // @include wrapper-padding;
   display: none;
 
   position: fixed;
@@ -81,9 +80,7 @@
 
 @media (min-width: $m-width) {
   .modal {
-    // width: 350px; Это ширин если без оберки с бордер-бокс
     width: 566px;
-    // min-height: 336px;
     margin: auto;
     padding-right: 105px;
     padding-left: 105px;

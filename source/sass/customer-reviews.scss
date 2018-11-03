@@ -137,7 +137,6 @@
 
 @media (min-width: $l-width) {
   .customer-reviews {
-    // padding-left: calc(#{$l-width-padding-left} + #{$l-width-padding});
     padding-left: $l-width-padding;
     padding-top: 72px;
     padding-bottom: 48px;

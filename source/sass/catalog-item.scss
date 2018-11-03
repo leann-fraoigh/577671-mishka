@@ -66,9 +66,7 @@
     padding-right: 28px;
   }
 
-  // @media (max-width: $s-width-max) {
   box-shadow: 0 -31px 0 -#{$s-width-padding} $color-newtral-medium;
-  // }
 }
 
 .catalog-item__price {
@@ -84,7 +82,6 @@
   height: 24px;
 
   .catalog-item__order-icon {
-    // fill: $color-newtral-medium;
     fill: transparentize($color-primary, 0.8);
   }
 
@@ -176,7 +173,7 @@
     margin-left: -1px;
     margin-right: -1px;
   }
-  // правила ниже временные -- проверить, нельзя ли оптимизировать!
+
   .catalog-item__description {
     margin-top: 3px;
     margin-bottom: 8;

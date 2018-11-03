@@ -4,8 +4,6 @@
   width: $s-width;
   margin-right: auto;
   margin-left: auto;
-  // outline: 1px dashed blueviolet;
-  // background-color: #fff8f8;
 
   @media (min-width: $m-width) {
     width: $m-width;
@@ -17,7 +15,6 @@
 }
 
 @mixin wrapper-padding {
-  // box-sizing: border-box;
   @media (max-width: $s-width-max) {
     padding-left: $s-width-padding;
     padding-right: $s-width-padding;
@@ -37,33 +34,8 @@
 @mixin wrapper-full-width {
   margin-left: calc(-100vw / 2 + #{$s-width} / 2);
   margin-right: calc(-100vw / 2 + #{$s-width} / 2);
-  // padding: 0 calc(100vw / 2 - #{$s-width} / 2);
 }
-//   @media (min-width: $m-width) {
-//     margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-//     padding: 0 calc(100vw / 2 - #{$m-width} / 2);
-//   }
 
-//   @media (min-width: $l-width) {
-//     margin: 0 calc(-100vw / 2 + #{l-width} / 2);
-//     padding: 0 calc(100vw / 2 - #{$l-width} / 2);
-//   }
-// }
-
-// @mixin wrapper-full-width-padding {
-//   margin: 0 calc(-100vw / 2 + #{$s-width} / 2);
-//   padding: 0 calc(100vw / 2 - #{$s-width} / 2 + #{$s-width-padding});
-
-//   @media (min-width: $m-width) {
-//     margin: 0 calc(-100vw / 2 + #{$m-width} / 2);
-//     padding: 0 calc(100vw / 2 - #{$m-width} / 2 + #{$m-width-padding});
-//   }
-
-//   @media (min-width: $l-width) {
-//     margin: 0 calc(-100vw / 2 + #{$l-width} / 2);
-//     padding: 0 calc(100vw / 2 - #{$l-width} / 2 + #{$l-width-padding});
-//   }
-// }
 
 // Разное
 @mixin reset-list-style {
