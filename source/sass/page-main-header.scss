@@ -109,7 +109,7 @@
   .page-main-header__wrapper,
   .page-main-header--inner-page .page-main-header__title-container {
     &::after {
-      bottom: -20px;
+      bottom: -18px;
       left: -$l-width-padding;
 
       width: calc(#{$l-width} + #{$l-width-padding} * 2);
