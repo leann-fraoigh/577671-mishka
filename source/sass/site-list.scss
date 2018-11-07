@@ -55,6 +55,10 @@
 
     .site-list__link {
       max-width: 215px;
+
+      @media (max-width: $m-width-max) {
+        padding-bottom: 2px;
+      }
     }
   }
 

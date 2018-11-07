@@ -1,5 +1,6 @@
 .special-offer {
   @include wrapper-padding;
+  @include wavy-line;
 }
 
 .special-offer__list {
@@ -18,7 +19,7 @@
   z-index: 10;
 
   @media (max-width: $s-width-max) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 }
 
@@ -44,6 +45,7 @@
   width: 100%;
   margin-bottom: 28px;
 
+  font-size: 15px;
   line-height: 20px;
 
   border-collapse: collapse;
@@ -54,7 +56,7 @@
 }
 
 .special-offer__attribute-label {
-  padding: 10px 0;
+  padding: 9px 0 10px 0;
 
   &:first-child {
     width: 97px;
@@ -87,24 +89,10 @@
 
 @media (min-width: $m-width) {
   .special-offer {
-    position: relative;
-
     &::after {
-      content: "";
-      position: absolute;
-
       @media (max-width: $m-width-max) {
         bottom: 2px;
-        left: 0;
-        width: $m-width;
-        height: 16px;
       }
-
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-
-      transform: scale(1, -1);
     }
   }
 
@@ -117,7 +105,7 @@
 
     @media (max-width: $m-width-max) {
       padding-top: 48px;
-      padding-bottom: 46px;
+      padding-bottom: 50px;
     }
 
     align-self: center;
@@ -148,7 +136,7 @@
   }
 
   .special-offer__image-container {
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: -131px;
   }
 
@@ -176,14 +164,10 @@
 
 @media (min-width: $l-width) {
   .special-offer {
-    padding-bottom: 30px;
+    margin-bottom: 88px;
 
     &::after {
-      bottom: 3px;
-      left: $l-width-padding;
-
-      width: calc(#{$l-width} - #{$l-width-padding} * 2);
-      height: 22px;
+      bottom: -28px;
     }
   }
 
@@ -213,11 +197,17 @@
   }
 
   .special-offer__description {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
+  }
+
+  .special-offer__attribute-label,
+  .special-offer__attribute-value {
+    padding-top: 6px;
+    padding-bottom: 13px;
   }
 
   .special-offer__image-container {
-    margin-top: -160px;
+    margin-top: -158px;
   }
 
   .special-offer__image {

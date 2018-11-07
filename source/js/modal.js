@@ -15,7 +15,7 @@ overlay.addEventListener("click", function(evt) {
   overlay.classList.remove("overlay--showed");
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (orderModal.classList.contains("modal--opened")) {
       evt.preventDefault();

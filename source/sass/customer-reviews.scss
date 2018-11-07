@@ -1,8 +1,13 @@
 .customer-reviews {
   @include wrapper-padding;
+  @include wavy-line;
 
   @media (max-width: $s-width-max) {
     margin-bottom: 52px;
+
+    &::after {
+      bottom: -50px;
+    }
   }
 }
 
@@ -19,11 +24,12 @@
 }
 
 .customer-reviews__text {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 
 .customer-reviews__author {
+  font-size: 17px;
   font-style: normal;
 }
 
@@ -42,13 +48,14 @@
 
 .customer-reviews__button {
   @media (max-width: $s-width-max) {
+    font-size: 18px;
     margin-bottom: 50px;
   }
 }
 
 @media (min-width: $m-width) {
   .customer-reviews {
-    position: relative;
+    // position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -67,14 +74,14 @@
     }
 
     &::after {
-      content: "";
-      position: absolute;
-
+      // content: "";
+      // position: absolute;
+      //
       @media (max-width: $m-width-max) {
         bottom: -85px;
-        left: 0;
-        width: $m-width;
-        height: 16px;
+        // left: 0;
+        // width: $m-width;
+        // height: 16px;
       }
 
       background-image: url("../img/bg-zigzag-line.svg");
@@ -103,7 +110,7 @@
   }
 
   .customer-reviews__text {
-    margin: 11px 0 58px 0;
+    margin: 11px 0 56px 0;
   }
 
   .customer-reviews__author {
@@ -138,7 +145,7 @@
 @media (min-width: $l-width) {
   .customer-reviews {
     padding-left: $l-width-padding;
-    padding-top: 72px;
+    padding-top: 70px;
     padding-bottom: 48px;
     margin-bottom: 88px;
 
@@ -146,10 +153,10 @@
 
     &::after {
       bottom: -88px;
-      left: $l-width-padding;
+      // left: $l-width-padding;
 
-      width: calc(#{$l-width} - #{$l-width-padding} * 2);
-      height: 22px;
+      // width: calc(#{$l-width} - #{$l-width-padding} * 2);
+      // height: 22px;
     }
   }
 

@@ -14,6 +14,7 @@
 
   @media (max-width: $s-width-max) {
     padding: 25px 110px 30px 30px;
+    font-size: 19px;
     line-height: 24px;
   }
 
@@ -21,8 +22,6 @@
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-
-  font-size: 19px;
   font-weight: 700;
   color: $color-newtral;
 
@@ -120,6 +119,7 @@
 
   .sub-nav-list__link {
     padding: 28px 130px 30px 35px;
+    font-size: 20px;
 
     &::after {
       top: calc(50% - 28px);

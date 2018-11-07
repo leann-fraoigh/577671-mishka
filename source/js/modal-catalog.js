@@ -11,7 +11,7 @@ for (var i = 0; i < length; i++) {
   buttonsArray.push(addToCartButton[i]);
 }
 
-for(var i = 0; i < buttonsArray.length; i++) {
+for (var i = 0; i < buttonsArray.length; i++) {
   buttonsArray[i].addEventListener("click", function(evt) {
     evt.preventDefault();
     orderModal.classList.add("modal--opened");
@@ -25,7 +25,7 @@ overlay.addEventListener("click", function(evt) {
   overlay.classList.remove("overlay--showed");
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (orderModal.classList.contains("modal--opened")) {
       evt.preventDefault();

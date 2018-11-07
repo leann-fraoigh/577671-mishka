@@ -26,7 +26,9 @@
 
   position: relative;
 
-  font-size: 20px;
+  @media (max-width: $s-width-max) {
+    font-size: 17px;
+  }
 
   @media (max-width: $s-width-max) {
     margin-top: 23px;
@@ -60,12 +62,12 @@
 
 .article__video-button {
   position: absolute;
-  top: calc(50% - 39px);
+  top: calc(50% - 43px);
   right: calc(50% - 51px);
 
   display: block;
-  width: 102px;
-  height: 72px;
+  width: 101px;
+  height: 77px;
 
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
@@ -115,6 +117,8 @@
   }
 
   .article__title {
+    font-size: 20px;
+
     @media (max-width: $m-width-max) {
       margin-top: 12px;
       margin-bottom: 33px;

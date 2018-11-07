@@ -36,6 +36,53 @@
   margin-right: calc(-100vw / 2 + #{$s-width} / 2);
 }
 
+// Декоративные элементы
+@mixin block-shadow {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 transparentize($color-primary, 0.9);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 transparentize($color-primary, 0.9);
+  }
+}
+
+@mixin wavy-line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: scale(1, -1);
+
+    @media (max-width: $s-width-max) {
+      width: $s-width;
+      height: 6px;
+    }
+
+    @media (min-width: $m-width) and (max-width: $m-width-max) {
+      width: $m-width;
+      height: 16px;
+
+      background-size: contain;
+    }
+
+    @media (min-width: $l-width) {
+      left: $l-width-padding;
+
+      width: calc(#{$l-width} - #{$l-width-padding} * 2);
+      height: 21px;
+    }
+  }
+}
 
 // Разное
 @mixin reset-list-style {
@@ -77,15 +124,4 @@
 @mixin title-h3 {
   font-size: 17px;
   line-height: 24px;
-}
-
-@mixin block-shadow {
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 transparentize($color-primary, 0.9);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px 0 transparentize($color-primary, 0.9);
-  }
 }

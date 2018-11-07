@@ -54,11 +54,11 @@
         </div>
       </header>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="wrapper">
+        <div class="form__wrapper wrapper">
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
-        <fieldset class="fieldset form__section">
-          <div class="form__fieldset form__fieldset--type wrapper">
+        <fieldset class="form__fieldset form__section">
+          <div class="form__field form__field--type form__wrapper wrapper">
             <div class="form__legend">Тип</div>
             <ul class="form__filter-list">
               <li class="form__filter-option">
@@ -72,8 +72,8 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__section fieldset">
-          <div class="form__fieldset form__fieldset--color wrapper">
+        <fieldset class="form__section form__fieldset">
+          <div class="form__field form__field--color form__wrapper wrapper">
             <div class="form__legend">Цвет</div>
             <ul class="form__filter-list form__filter-list--color">
               <li class="form__filter-option">
@@ -103,8 +103,8 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__section fieldset">
-          <div class="form__fieldset form__fieldset--customer-name wrapper">
+        <fieldset class="form__section form__fieldset">
+          <div class="form__field form__field--customer-name form__wrapper wrapper">
             <div class="form__legend"><abbr title="Фамилия, имя, отчество">ФИО</abbr></div>
             <div class="form__inputs-list">
               <label class="form__label" for="order-name">Имя:</label>
@@ -117,24 +117,24 @@
           </div>
         </fieldset>
         <div class="form__section form__section--customer-contacts">
-          <div class="form__fieldset wrapper">
+          <div class="form__field form__wrapper wrapper">
             <label class="form__legend" for="order-phone" title="Ваш телефон">Тел</label>
             <input id="order-phone" class="form__input form__input--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="phone" required>
             <svg class="form__icon form__icon--phone" width="25" height="24"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
           </div>
-          <div class="form__fieldset wrapper">
-            <label class="form__legend" for="order-email" title="Ваш электронный адрес">E-mail</label>
+          <div class="form__field form__wrapper wrapper">
+            <label class="form__legend form__legend--email" for="order-email" title="Ваш электронный адрес">E-mail</label>
             <input id="order-email" class="form__input form__input--email" placeholder="Ваш Email*" type="email" name="email" required>
             <svg class="form__icon form__icon--mail" width="32" height="21"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
           </div>
         </div>
         <div class="form__section">
-          <div class="form__fieldset form__fieldset--comment wrapper">
+          <div class="form__field form__field--comment form__wrapper wrapper">
             <label class="form__legend" for="order-comment" title="Дополнительно">Доп:</label>
             <textarea id="order-comment" class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу" name="comment"></textarea>
           </div>
-          <div class="form__footer wrapper">
-            <p class="form__footnote">* Поля обязательны для заполнения</p>
+          <div class="form__footer form__wrapper wrapper">
+            <p class="form__footnote">*Поля обязательны для заполнения</p>
             <button class="form__send-button button" type="submit">Отправить заказ</button>
           </div>
         </div>

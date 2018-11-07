@@ -1,6 +1,7 @@
 .about {
   @include wrapper-padding;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
+  // 38
 
   color: $color-primary;
 }
@@ -9,7 +10,7 @@
 .about__title {
   @include reset-title-style;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .about__list {
@@ -87,7 +88,7 @@
     @include reset-title-style-m;
 
     @media (max-width: $m-width-max) {
-      margin-top: 50px;
+      margin-top: 48px;
     }
   }
 

@@ -40,6 +40,16 @@
   .page-footer__logo {
     display: block;
 
-    padding-bottom: 6px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $l-width) {
+  .page-footer {
+    padding-top: 15px;
+  }
+
+  .page-footer__copywrite {
+    margin-top: 15px;
   }
 }
